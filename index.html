@@ -2,11 +2,123 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>PINK</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <div class="page-header__logo">
+        PINK
+      </div>
+      <div class="page-header__hamburger">
+        <!-- Здесь будет иконка-гамбургер -->
+        <div class="page-header__menu-hover">
+          <a href="#" class="page-header__cross">Закрыть</a>
+          <ul class="page-header__menu-list">
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Возможности</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Стоимость</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main-content">
+      <div class="presentation">
+        <div class="slogan slogan--dark-bg">Взгляните на жизнь иначе!</div>
+        <img src="http://placehold.it/50x50" class="presentation__img" alt="Приложение" width="50" height="50">
+      </div>
+      <div class="download-section">
+        <a href="#" class="btn">Скачать приложение</a>
+        <div class="download-section__icons">
+          <a href="#" class="download-section__icon download-section__icon--apple"></a>
+          <a href="#" class="download-section__icon download-section__icon--android"></a>
+          <a href="#" class="download-section__icon download-section__icon--windows"></a>
+        </div>
+        <p class="download-section__text">
+          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </p>
+      </div>
+      <div class="slogan">Устали от серости мегаполиса?</div>
+      <div class="slogan">Нам есть, что вам предложить!</div>
+      <div class="characteristics">
+        <div class="characteristic__item">
+          <h4 class="characteristic__name">Поднимает настроение</h4>
+          <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </div>
+        <div class="characteristic__item">
+          <h4 class="characteristic__name">Меняет мир вокруг</h4>
+          <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="characteristic__item">
+          <h4 class="characteristic__name">Заводит новых друзей</h4>
+          <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+        <img src="http://placehold.it/50x50" class="characteristics__img" alt="Всем привет!" width="50" height="50">
+      </div>
+      <div class="feedback">
+        <div class="characteristic__item"> <!-- Как переиспользовать здесь этот класс? -->
+          <h4 class="characteristic__name">Николай Петров</h4>
+          <p>
+            &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+            А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+          </p>
+        </div>
+      </div>
+      <!-- Здесь будет переключатель -->
+      <ul class="fares">
+        <li class="fare">
+          <header class="fare__header">
+            <b>База</b>
+            <span>1,99 USD</span>
+          </header>
+          <ul class="fare__items">
+            <li class="fare__item fare__item--include">Розовый фильтр</li>
+            <li class="fare__item fare__item--exclude">Смайлики</li>
+            <li class="fare__item fare__item--exclude">Комментарии</li>
+          </ul>
+        </li>
+        <li class="fare">
+          <header class="fare__header fare__header--hit">
+            <b>Стандарт</b>
+            <span>3,99 USD</span>
+          </header>
+          <ul class="fare__items">
+            <li class="fare__item fare__item--include">Розовый фильтр</li>
+            <li class="fare__item fare__item--include">Смайлики</li>
+            <li class="fare__item fare__item--exclude">Комментарии</li>
+          </ul>
+        </li>
+        <li class="fare">
+          <header class="fare__header">
+            <b>Анлим</b>
+            <span>9,99 USD</span>
+          </header>
+          <ul class="fare__items">
+            <li class="fare__item fare__item--include">Розовый фильтр</li>
+            <li class="fare__item fare__item--include">Смайлики</li>
+            <li class="fare__item fare__item--include">Комментарии</li>
+          </ul>
+        </li>
+      </ul>
+      <!-- Здесь будет переключатель -->
+    </main>
+    <div class="contacts">
+      <!-- Здесь будет карта -->
+      <div class="contacts__detail">
+        <div class="slogan">Остались вопросы? Свяжитесь с нами!</div>
+        <div class="contacts__item">
+          <b>Звоните:</b>
+          <span>+7(812)555-66-66</span>
+        </div>
+        <div class="contacts__item">
+          <b>Пишите:</b>
+          <span>mail@htmlacademy.ru</span>
+        </div>
+        <div class="contacts__item">
+          <b>Приезжайте в гости:</b>
+          <span>ул. Большая Конюшенная, 19/8</span>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
