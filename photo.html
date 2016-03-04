@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Фотографии участников</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="index.html" class="page-header__logo">
+        PINK
+      </a>
+      <div class="page-header__hamburger">
+        <div class="page-header__menu-hover">
+          <a href="#" class="page-header__cross">Закрыть</a>
+          <ul class="page-header__menu-list">
+            <li><a href="index.html">Главная</a></li>
+            <li><div>Фотографии</div></li>
+            <li><a href="form.html">Конкурс</a></li>
+            <li><a href="#">HTML Academy</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="main-content">
+      <div class="presentation">
+        <div class="slogan slogan--dark-bg">
+          Фотографии пользователей
+        </div>
+      </div>
+      <p class="main-comtent__text">
+        Взгляните на фотографии, которые выкладывают пользователи!
+        Видите, как не хватает ваших?
+      </p>
+      <div class="user-photo">
+        <a href="#" class="user-photo__photo user-photo__panoramic">
+          <img src="http://placehold.it/50x50" alt="Панорама" width="50" height="50">
+        </a>
+        <div class="user-photo__detail">
+          <span class="user-photo__user-name">Анна</span>
+          <time>(5 минут назад)</time>
+          <p>
+            Прыгать или нет? Напишите в комментрариях свой совет и смотрите прямую
+            трансляцию в перископе, задавайте свои вопросы!
+          </p>
+          <span class="user-photo__like">Нравится: 215</span>
+        </div>
+      </div>
+      <div class="user-photo">
+        <a href="#" class="user-photo__photo">
+          <img src="http://placehold.it/50x50" alt="Камера" width="50" height="50">
+        </a>
+        <div class="user-photo__detail">
+          <span class="user-photo__user-name">Левон</span>
+          <time>(5 часов назад)</time>
+          <p>
+            Вчера он на луну летал, сегодня в руки к нам попал.
+          </p>
+          <span class="user-photo__like">Нравится: 356</span>
+        </div>
+      </div>
+      <div class="user-photo">
+        <a href="#" class="user-photo__photo">
+          <img src="http://placehold.it/50x50" alt="Барабан" width="50" height="50">
+        </a>
+        <div class="user-photo__detail">
+          <span class="user-photo__user-name">Антон</span>
+          <time>(12 часов назад)</time>
+          <p>
+            Соседи будут рады!
+          </p>
+          <span class="user-photo__like">Нравится: 666</span>
+        </div>
+      </div>
+      <div class="user-photo">
+        <a href="#" class="user-photo__photo">
+          <img src="http://placehold.it/50x50" alt="Окна" width="50" height="50">
+        </a>
+        <div class="user-photo__detail">
+          <span class="user-photo__user-name">Борис</span>
+          <time>(20 часов назад)</time>
+          <p>
+            Здесь могла быть ваша цитата о высоком и вечном.
+          </p>
+          <span class="user-photo__like">Нравится: 215</span>
+        </div>
+      </div>
+      <div class="user-photo">
+        <a href="#" class="user-photo__photo">
+          <img src="http://placehold.it/50x50" alt="Кубанская Бахча" width="50" height="50">
+        </a>
+        <div class="user-photo__detail">
+          <span class="user-photo__user-name">Сергей</span>
+          <time>(25 часов назад)</time>
+          <p>
+            Самая кубанская в мире!
+          </p>
+          <span class="user-photo__like">Нравится: 4</span>
+        </div>
+      </div>
+      <div class="user-photo">
+        <a href="#" class="user-photo__photo">
+          <img src="http://placehold.it/50x50" alt="Природа" width="50" height="50">
+        </a>
+        <div class="user-photo__detail">
+          <span class="user-photo__user-name">Максим</span>
+          <time>(40 часов назад)</time>
+          <p>
+            Где снег-то?
+          </p>
+          <span class="user-photo__like">Нравится: 150</span>
+        </div>
+      </div>
+      <div class="user-photo">
+        <a href="#" class="user-photo__photo">
+          <img src="http://placehold.it/50x50" alt="Восход" width="50" height="50">
+        </a>
+        <div class="user-photo__detail">
+          <span class="user-photo__user-name">Надежда</span>
+          <time>(45 часов назад)</time>
+          <p>
+            Всем GM и взаимные лайки!
+          </p>
+          <span class="user-photo__like">Нравится: 2560</span>
+        </div>
+      </div>
+      <p class="main-content__text">
+        Затмите их всех!<br>
+        Выкладывайте все, что накопилось в телефоне!
+      </p>
+      <div class="user-photo__my-photo">
+        <form>
+          <img src="http://placehold.it/50x50" alt="Фото" width="50" height="50">
+          <ul class="user-photo__toolbar"> <!-- Дальше очень много классов)) -->
+            <li class="user-photo__toolbar-item user-photo__toolbar-item--crop user-photo__toolbar--crop-active"></li>
+            <li class="user-photo__toolbar-item user-photo__toolbar-item--color"></li>
+            <li class="user-photo__toolbar-item user-photo__toolbar-item--contrast"></li>
+          </ul>
+          <ul class="user-photo__toolbar-line">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <button type="submit" class="btn btn--submit">Запостить</button>
+          <button type="reset" class="btn btn--cancel">Отмена</button>
+        </form>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__section">
+        <img src="http://placehold.it/50x50" alt="PINK" width="50" height="50">
+        PINK
+      </div>
+      <div class="page-footer__section">
+        <a href="#" class="page-footer__social page-footer__social--twitter">twitter</a>
+        <a href="#" class="page-footer__social page-footer__social--facebook">facebook</a>
+        <a href="#" class="page-footer__social page-footer__social--youtube">youtube</a>
+      </div>
+      <div class="page-footer__section">
+        <span>Разработано</span>
+        <img src="http://placehold.it/50x50" alt="htmlacademy" width="50" height="50">
+      </div>
+    </footer>
+  </body>
+</html>
