@@ -33,14 +33,14 @@
           1000 миль на вашу бонусную карту!
         </p>
         <form>
-          <div class="form-section">
+          <fieldset class="form-section">
             <label for="user-name" class="form-section__item-name">Имя:</label>
             <input type="text" class="form-section__item" id="user-name" placeholder="Введите ваше имя">
             <label for="user-surname" class="form-section__item-name">Фамилия:</label>
             <input type="text" class="form-section__item" id="user-surname" placeholder="Укажите фамилию">
             <label for="user-patronymic" class="form-section__item-name">Отчество:</label>
             <input type="text" class="form-section__item" id="user-patronymic" placeholder="Ну и отчество тоже">
-          </div>
+          </fieldset>
           <fieldset class="form-section">
             <legend class="form-section__item-name form-section__item-name--align">
               Ваши безбашенные достижения в путешествии
@@ -99,10 +99,10 @@
             </label>
             <textarea class="form-section__item form-section__item--textarea" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <fieldset class="form__submit">
+          <div class="form__submit">
             <button type="submit" class="form-submit-btn">Отправить форму</button>
             <p class="form__required"><sup>*</sup>&mdash; обязательные поля</p>
-          </fieldset>
+          </div>
         </form>
       </section>
     </main>
