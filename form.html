@@ -7,108 +7,109 @@
   <body>
     <header class="page-header">
       <a href="index.html" class="page-header__logo">
-        PINK
+        <img src="http://placehold.it/50x50" alt="PINK" width="50" height="50">
       </a>
-      <div class="page-header__hamburger">
-        <div class="page-header__menu-hover">
-          <a href="#" class="page-header__cross">Закрыть</a>
-          <ul class="page-header__menu-list">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="photo.html">Фотографии</a></li>
-            <li><div>Конкурс</div></li>
-            <li><a href="#">HTML Academy</a></li>
+      <nav class="main-nav">
+        <a href="#" class="main-nav__icon-menu">Открыть/Закрыть</a>
+        <div class="main-nav__menu-hover">
+          <ul class="main-nav__menu-list">
+            <li class="main-nav__menu-item"><a href="#">Информация</a></li>
+            <li class="main-nav__menu-item"><a href="#">Возможности</a></li>
+            <li class="main-nav__menu-item"><a href="#">Отзывы</a></li>
+            <li class="main-nav__menu-item"><a href="#">Стоимость</a></li>
           </ul>
         </div>
-      </div>
+      </nav>
     </header>
     <main class="main-content">
-      <div class="presentation">
-        <div class="slogan slogan--dark-bg">
+      <section class="presentation">
+        <div class="presentation__slogan">
           Конкурс на самое безбашенное путешествие с Пинк
-        </div>
+        </section>
       </div>
-      <p class="main-comtent__text">
-        Поделитесь своей историейи получите шанс выиграть ценный приз &mdash;
-        1000 миль на вашу бонусную карту!
-      </p>
-      <form>
-        <div class="form-section">
-          <label for="user-name" class="form-section__item-name">Имя:</label>
-          <input type="text" class="form-section__item" id="user-name" placeholder="Введите ваше имя">
-          <label for="user-surname" class="form-section__item-name">Фамилия:</label>
-          <input type="text" class="form-section__item" id="user-surname" placeholder="Укажите фамилию">
-          <label for="user-patronymic" class="form-section__item-name">Отчество:</label>
-          <input type="text" class="form-section__item" id="user-patronymic" placeholder="Ну и отчество тоже">
-        </div>
-        <div class="form-section">
-          <h3 class="form-section__item-name form-section__item-name--align">
-            Ваши безбашенные достижения в путешествии
-          </h3>
-          <input type="checkbox" id="selfie-with-shark" name="selfie-with-shark" checked>
-          <label for="selfie-with-shark" class="form-section__option form-section__option--checkbox">
-            Сделал селфи с акулой
-          </label>
-          <input type="checkbox" id="burned-on-beach" name="burned-on-beach" checked>
-          <label for="burned-on-beach" class="form-section__option form-section__option--checkbox">
-            Обгорел на пляже
-          </label>
-          <input type="checkbox" id="seen-Chuck-Norris" name="seen-Chuck-Norris">
-          <label for="seen-Chuck-Norris" class="form-section__option form-section__option--checkbox">
-            Видел Чака Норриса
-          </label>
-          <input type="checkbox" id="bought-souvenirs" name="bought-souvenirs">
-          <label for="bought-souvenirs" class="form-section__option form-section__option--checkbox">
-            Накупил сувениров
-          </label>
-          <input type="checkbox" id="pinned-tower" name="pinned-tower" checked>
-          <label for="pinned-tower" class="form-section__option form-section__option--checkbox">
-            Удержал башню
-          </label>
-          <input type="checkbox" id="destroyed-hotel" name="destroyed-hotel">
-          <label for="destroyed-hotel" class="form-section__option form-section__option--checkbox">
-            Разгромил отель
-          </label>
-        </div>
-        <div class="form-section">
-          <label for="user-phone" class="form-section__item-name">Номерок телефончика</label>
-          <input type="tel" id="user-phone" name="user-phone" placeholder="Номер, пожалуйста">
-          <label for="user-email" class="form-section__item-name">Адресок почты</label>
-          <input type="email" id="user-email" name="user-email" placeholder="E-mail, пожалуйста">
-        </div>
-        <div class="form-section">
-          <h3 class="form-section__item-name form-section__item-name--align">
-            С каким приложением путешествовали?
-          </h3>
-          <input type="radio" id="iOS" name="mobile-app" checked>
-          <label for="iOS" class="form-section__option form-section__option--radio">
-            Pink для iOS
-          </label>
-          <input type="radio" id="Android" name="mobile-app">
-          <label for="Android" class="form-section__option form-section__option--radio">
-            Pink на Android
-          </label>
-          <input type="radio" id="Windows-phone" name="mobile-app">
-          <label for="Windows-phone" class="form-section__option form-section__option--radio">
-            Windows Phone
-          </label>
-        </div>
-        <div class="form-section">
-          <h3 class="form-section__item-name form-section__item-name--align">
-            Опишите свои эмоции
-          </h3>
-          <textarea class="form-section__item form-section__item--textarea" placeholder="Можно прям в красках, не стесняясь в выражениях">
-          </textarea>
-        </div>
-        <div class="form__submit">
-          <button type="submit" class="form-submit-btn" name="submit"><!-- name нужно или нет? Если нужно, то зачем? -->
-          <p><span>*</span>&mdash; обязательные поля</p>
-        </div>
-      </form>
+      <section class="form">
+        <p class="form__description">
+          Поделитесь своей историейи получите шанс выиграть ценный приз &mdash;
+          1000 миль на вашу бонусную карту!
+        </p>
+        <form>
+          <div class="form-section">
+            <label for="user-name" class="form-section__item-name">Имя:</label>
+            <input type="text" class="form-section__item" id="user-name" placeholder="Введите ваше имя">
+            <label for="user-surname" class="form-section__item-name">Фамилия:</label>
+            <input type="text" class="form-section__item" id="user-surname" placeholder="Укажите фамилию">
+            <label for="user-patronymic" class="form-section__item-name">Отчество:</label>
+            <input type="text" class="form-section__item" id="user-patronymic" placeholder="Ну и отчество тоже">
+          </div>
+          <div class="form-section">
+            <h3 class="form-section__item-name form-section__item-name--align">
+              Ваши безбашенные достижения в путешествии
+            </h3>
+            <input type="checkbox" class="form-section__checkbox" id="selfie-with-shark" name="selfie-with-shark" checked>
+            <label for="selfie-with-shark" class="form-section__option form-section__option--checkbox">
+              Сделал селфи с акулой
+            </label>
+            <input type="checkbox" class="form-section__checkbox" id="burned-on-beach" name="burned-on-beach" checked>
+            <label for="burned-on-beach" class="form-section__option form-section__option--checkbox">
+              Обгорел на пляже
+            </label>
+            <input type="checkbox" class="form-section__checkbox" id="seen-Chuck-Norris" name="seen-Chuck-Norris">
+            <label for="seen-Chuck-Norris" class="form-section__option form-section__option--checkbox">
+              Видел Чака Норриса
+            </label>
+            <input type="checkbox" class="form-section__checkbox" id="bought-souvenirs" name="bought-souvenirs">
+            <label for="bought-souvenirs" class="form-section__option form-section__option--checkbox">
+              Накупил сувениров
+            </label>
+            <input type="checkbox" class="form-section__checkbox" id="pinned-tower" name="pinned-tower" checked>
+            <label for="pinned-tower" class="form-section__option form-section__option--checkbox">
+              Удержал башню
+            </label>
+            <input type="checkbox" class="form-section__checkbox" id="destroyed-hotel" name="destroyed-hotel">
+            <label for="destroyed-hotel" class="form-section__option form-section__option--checkbox">
+              Разгромил отель
+            </label>
+          </div>
+          <div class="form-section">
+            <label for="user-phone" class="form-section__item-name">Номерок телефончика</label>
+            <input type="tel" id="user-phone" name="user-phone" placeholder="Номер, пожалуйста">
+            <label for="user-email" class="form-section__item-name">Адресок почты</label>
+            <input type="email" id="user-email" name="user-email" placeholder="E-mail, пожалуйста">
+          </div>
+          <div class="form-section">
+            <h3 class="form-section__item-name form-section__item-name--align">
+              С каким приложением путешествовали?
+            </h3>
+            <input type="radio" class="form-section__radio" id="iOS" name="mobile-app" checked>
+            <label for="iOS" class="form-section__option form-section__option--radio">
+              Pink для iOS
+            </label>
+            <input type="radio" class="form-section__radio" id="Android" name="mobile-app">
+            <label for="Android" class="form-section__option form-section__option--radio">
+              Pink на Android
+            </label>
+            <input type="radio" class="form-section__radio" id="Windows-phone" name="mobile-app">
+            <label for="Windows-phone" class="form-section__option form-section__option--radio">
+              Windows Phone
+            </label>
+          </div>
+          <div class="form-section">
+            <label for="emotions" class="form-section__item-name form-section__item-name--align">
+              Опишите свои эмоции
+            </label>
+            <textarea class="form-section__item form-section__item--textarea" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </div>
+          <div class="form__submit">
+            <button type="submit" class="form-submit-btn">Отправить форму</button>
+            <p class="form__required"><sup>*</sup>&mdash; обязательные поля</p>
+          </div>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__section">
-        <img src="http://placehold.it/50x50" alt="PINK" width="50" height="50">
-        PINK
+        <img src="http://placehold.it/50x50" class="page-footer__PINK-logo" alt="PINK-logo" width="50" height="50">
+        <img src="http://placehold.it/50x50" class="page-footer__PINK" alt="PINK" width="50" height="50">
       </div>
       <div class="page-footer__section">
         <a href="#" class="page-footer__social page-footer__social--twitter">twitter</a>
@@ -116,8 +117,8 @@
         <a href="#" class="page-footer__social page-footer__social--youtube">youtube</a>
       </div>
       <div class="page-footer__section">
-        <span>Разработано</span>
-        <img src="http://placehold.it/50x50" alt="htmlacademy" width="50" height="50">
+        <span class="page-footer__designed">Разработано</span>
+        <img src="http://placehold.it/50x50" class="page-footer__logo-htmlacademy" alt="htmlacademy" width="50" height="50">
       </div>
     </footer>
   </body>

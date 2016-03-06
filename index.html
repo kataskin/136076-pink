@@ -7,27 +7,25 @@
   <body>
     <header class="page-header">
       <div class="page-header__logo">
-        PINK
+        <img src="http://placehold.it/50x50" alt="PINK" width="50" height="50">
       </div>
-      <div class="page-header__hamburger">
-        <!-- Здесь будет иконка-гамбургер -->
-        <div class="page-header__menu-hover">
-          <a href="#" class="page-header__cross">Закрыть</a>
-          <ul class="page-header__menu-list">
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Возможности</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Стоимость</a></li>
+      <nav class="main-nav">
+        <a href="#" class="main-nav__icon-menu">Открыть/Закрыть</a>
+        <div class="main-nav__menu-hover">
+          <ul class="main-nav__menu-list">
+            <li class="main-nav__menu-item"><a href="#">Информация</a></li>
+            <li class="main-nav__menu-item"><a href="#">Возможности</a></li>
+            <li class="main-nav__menu-item"><a href="#">Отзывы</a></li>
+            <li class="main-nav__menu-item"><a href="#">Стоимость</a></li>
           </ul>
         </div>
-      </div>
+      </nav>
     </header>
     <main class="main-content">
-      <div class="presentation">
-        <div class="slogan slogan--dark-bg">Взгляните на жизнь иначе!</div>
-        <img src="http://placehold.it/50x50" class="presentation__img" alt="Приложение" width="50" height="50">
-      </div>
-      <div class="download-section">
+      <section class="presentation">
+        <div class="presentation__slogan">Взгляните на жизнь иначе!</div>
+      </section>
+      <section class="download-section">
         <a href="#" class="btn">Скачать приложение</a>
         <div class="download-section__icons">
           <a href="#" class="download-section__icon download-section__icon--apple"></a>
@@ -37,82 +35,108 @@
         <p class="download-section__text">
           Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </p>
-      </div>
-      <div class="slogan">Устали от серости мегаполиса?</div>
-      <div class="slogan">Нам есть, что вам предложить!</div>
-      <div class="characteristics">
-        <div class="characteristic__item">
-          <h4 class="characteristic__name">Поднимает настроение</h4>
-          <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+      </section>
+      <section class="information">
+        <div class="information__slogan">Устали от серости мегаполиса?</div>
+        <div class="information__slogan">Нам есть, что вам предложить!</div>
+        <div class="characteristics">
+          <div class="characteristics__item">
+            <h4 class="characteristics__name">Поднимает настроение</h4>
+            <p class="characteristics__text">
+              Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+            </p>
+          </div>
+          <div class="characteristics__item">
+            <h4 class="characteristics__name">Меняет мир вокруг</h4>
+            <p class="characteristics__text">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
+          </div>
+          <div class="characteristics__item">
+            <h4 class="characteristics__name">Заводит новых друзей</h4>
+            <p class="characteristics__text">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </div>
+          <img src="http://placehold.it/50x50" class="characteristics__img" alt="Всем привет!" width="50" height="50">
         </div>
-        <div class="characteristic__item">
-          <h4 class="characteristic__name">Меняет мир вокруг</h4>
-          <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-        </div>
-        <div class="characteristic__item">
-          <h4 class="characteristic__name">Заводит новых друзей</h4>
-          <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-        </div>
-        <img src="http://placehold.it/50x50" class="characteristics__img" alt="Всем привет!" width="50" height="50">
-      </div>
-      <div class="feedback">
-        <div class="characteristic__item"> <!-- Как переиспользовать здесь этот класс? -->
-          <h4 class="characteristic__name">Николай Петров</h4>
-          <p>
-            &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-            А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
-          </p>
-        </div>
-      </div>
-      <!-- Здесь будет переключатель -->
-      <ul class="fares">
-        <li class="fare">
-          <header class="fare__header">
-            <b>База</b>
-            <span>1,99 USD</span>
-          </header>
-          <ul class="fare__items">
-            <li class="fare__item fare__item--include">Розовый фильтр</li>
-            <li class="fare__item fare__item--exclude">Смайлики</li>
-            <li class="fare__item fare__item--exclude">Комментарии</li>
-          </ul>
-        </li>
-        <li class="fare">
-          <header class="fare__header fare__header--hit">
-            <b>Стандарт</b>
-            <span>3,99 USD</span>
-          </header>
-          <ul class="fare__items">
-            <li class="fare__item fare__item--include">Розовый фильтр</li>
-            <li class="fare__item fare__item--include">Смайлики</li>
-            <li class="fare__item fare__item--exclude">Комментарии</li>
-          </ul>
-        </li>
-        <li class="fare">
-          <header class="fare__header">
-            <b>Анлим</b>
-            <span>9,99 USD</span>
-          </header>
-          <ul class="fare__items">
-            <li class="fare__item fare__item--include">Розовый фильтр</li>
-            <li class="fare__item fare__item--include">Смайлики</li>
-            <li class="fare__item fare__item--include">Комментарии</li>
-          </ul>
-        </li>
-      </ul>
-      <!-- Здесь будет переключатель -->
+      </section>
+      <section class="feedback">
+        <ul class="feedback-list">
+          <li class="feedback-item">
+            <p class="feedback-item__user-name">Николай Петров</p>
+            <p class="feedback-item__text">
+              &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+            </p>
+          </li>
+          <li class="feedback-item">
+            <p class="feedback-item__user-name">Николай Петров</p>
+            <p class="feedback-item__text">
+              &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+            </p>
+          </li>
+          <li class="feedback-item">
+            <p class="feedback-item__user-name">Николай Петров</p>
+            <p class="feedback-item__text">
+              &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+            </p>
+          </li>
+        </ul>
+        <!-- Здесь будет переключатель -->
+      </section>
+      <section class="fares">
+        <ul class="fares-list">
+          <li class="fare">
+            <div class="fare__name">
+              <b>База</b>
+              <span>1,99 USD</span>
+            </div>
+            <ul class="fare__items">
+              <li class="fare__item fare__item--include">Розовый фильтр</li>
+              <li class="fare__item fare__item--exclude">Смайлики</li>
+              <li class="fare__item fare__item--exclude">Комментарии</li>
+            </ul>
+          </li>
+          <li class="fare">
+            <div class="fare__name fare__name--hit">
+              <b>Стандарт</b>
+              <span>3,99 USD</span>
+            </div>
+            <ul class="fare__items">
+              <li class="fare__item fare__item--include">Розовый фильтр</li>
+              <li class="fare__item fare__item--include">Смайлики</li>
+              <li class="fare__item fare__item--exclude">Комментарии</li>
+            </ul>
+          </li>
+          <li class="fare">
+            <div class="fare__name">
+              <b>Анлим</b>
+              <span>9,99 USD</span>
+            </div>
+            <ul class="fare__items">
+              <li class="fare__item fare__item--include">Розовый фильтр</li>
+              <li class="fare__item fare__item--include">Смайлики</li>
+              <li class="fare__item fare__item--include">Комментарии</li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Здесь будет переключатель -->
+      </section>
     </main>
     <div class="contacts">
       <!-- Здесь будет карта -->
       <div class="contacts__detail">
-        <div class="slogan">Остались вопросы? Свяжитесь с нами!</div>
+        <div class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</div>
         <div class="contacts__item">
           <b>Звоните:</b>
-          <span>+7(812)555-66-66</span>
+          <a href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
         </div>
         <div class="contacts__item">
           <b>Пишите:</b>
-          <span>mail@htmlacademy.ru</span>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
         <div class="contacts__item">
           <b>Приезжайте в гости:</b>
