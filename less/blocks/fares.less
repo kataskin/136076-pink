@@ -2,3 +2,41 @@
 
   outline: 2px solid green;
 }
+
+.fares__list {
+  width: @mobile-width-wrapper * 3;
+  @media @tablet-widths {
+    width: @tablet-width-wrapper;
+  }
+  @media @desktop-widths {
+    width: @desktop-width-wrapper;
+  }
+}
+
+.fares__item-name {
+  text-align: center;
+}
+
+.fares__item-name:first-child {
+  @media @mobile-width-only {
+      display: none;
+  }
+}
+
+.fares__price-item {
+  display: block;
+}
+
+.fares__filter-name {
+  @media @mobile-width-only {
+      display: none;
+  }
+
+  outline: 2px solid red;
+}
+
+.fares__option {
+  @media @tablet-widths {
+    font-size: 0;
+  }
+}

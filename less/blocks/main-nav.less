@@ -2,3 +2,49 @@
 
   outline: 2px solid green;
 }
+
+.main-nav__wrapper {
+  position: relative;
+  @media @desktop-widths {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  outline: 2px solid blue;
+}
+
+.main-nav__icon-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  @media @desktop-widths {
+    display: none;
+  }
+}
+
+.main-nav__menu-list {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  @media @desktop-widths {
+    position: static;
+    display: flex;
+    justify-content: flex-end;
+    width: 700px;
+    margin: 0;
+  }
+
+  outline: 2px solid yellow;
+}
+
+.main-nav__menu-item {
+  min-height: 30px;
+  text-align: center;
+  @media @desktop-widths {
+    margin: 0 0 0 80px;
+  }
+}

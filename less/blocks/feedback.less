@@ -1,4 +1,55 @@
 .feedback {
+  position: relative;
 
   outline: 2px solid yellow;
+}
+
+.feedback__switch {
+  display: none;
+  @media @desktop-widths {
+    position: absolute;
+    top: 50px;
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+
+  outline: 2px solid green;
+}
+
+.feedback__switch--prev {
+  left: 0;
+}
+
+.feedback__switch--next {
+  right: 0;
+}
+
+.feedback__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  @media @desktop-widths {
+    width: 700px;
+  }
+}
+
+.feedback__item {
+  display: flex;
+  flex-direction: column;
+  @media @tablet-widths {
+    flex-direction: column-reverse;
+  }
+}
+
+.feedback__user-detail {
+  display: none;
+  @media @tablet-widths {
+    display: block;
+  }
+}
+
+.feedback__item--none {
+  display: none;
 }

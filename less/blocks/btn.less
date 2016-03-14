@@ -1,4 +1,17 @@
 .btn {
+  display: block;
+  width: 100%;
+  margin: 20px 0 0;
 
   outline: 2px solid green;
+}
+
+.btn--submit,
+.btn--cancel {
+  @media @tablet-widths {
+    width: 260px;
+  }
+  @media @desktop-widths {
+    width: 185px;
+  }
 }

@@ -1,4 +1,46 @@
 .user-post {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  @media @tablet-widths {
+    width: 300px;
+  }
 
   outline: 2px solid red;
+}
+
+.user-post--panoramic {
+  width: 100%;
+  .user-post__comment {
+    @media @tablet-widths {
+      order: 1;
+    }
+  }
+}
+
+.user-post__link {
+  width: 100%;
+}
+
+.user-post__user-detail {
+  max-width: 240px;
+  margin: 10px 20px;
+  @media @tablet-widths {
+    margin-left: 30px;
+  }
+}
+
+.user-post__comment {
+  width: 100%;
+  margin: 10px 20px;
+  @media @tablet-widths {
+    margin-left: 30px;
+  }
+}
+
+.user-post__like {
+  margin-left: 50px;
+  @media @tablet-widths {
+    margin-left: 30px;
+  }
 }

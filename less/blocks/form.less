@@ -2,3 +2,161 @@
 
   outline: 2px solid green;
 }
+
+.form__description {
+  text-align: center;
+  @media @tablet-widths {
+    width: 500px;
+    margin: 0 auto;
+  }
+  @media @desktop-widths {
+    width: 820px;
+  }
+
+  outline: 2px solid red;
+}
+
+.form__main-field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form__section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+  padding: 0;
+  border: none;
+  @media @tablet-widths {
+    width: 500px;
+    padding: 30px 60px;
+  }
+  @media @desktop-widths {
+    flex-wrap: nowrap;
+  }
+
+  outline: 2px solid yellow;
+}
+
+.form__section-item {
+  display: flex;
+  flex-direction: column;
+  @media @tablet-widths {
+    flex-direction: row;
+    &--user-contact {
+      flex-wrap: wrap;
+    }
+  }
+
+  outline: 2px solid green;
+}
+
+.form__item-name {
+
+  outline: 2px solid red;
+  min-height: 40px;
+}
+
+.form__item-name--mobile-only {
+  @media @tablet-widths {
+    display: none;
+  }
+}
+
+.form__item-name--align {
+  text-align: center;
+}
+
+.form__item {
+  width: 100%;
+}
+
+.form__item--textarea {
+  height: 100px;
+}
+
+.form__option {
+  margin-left: 70px;
+
+  outline: 2px solid green;
+  min-height: 40px;
+}
+
+.form__checkbox,
+.form__radio {
+  display: none;
+}
+
+.form__section--user-detail {
+  order: -3;
+  padding: 0;
+  @media @tablet-widths {
+    width: @tablet-width-wrapper;
+  }
+  @media @desktop-widths {
+    width: 433px;
+  }
+}
+
+.form__section--user-app {
+  @media @tablet-widths {
+    order: -2;
+  }
+  @media @desktop-widths {
+    width: 300px;
+  }
+}
+
+.form__section--user-contact {
+  @media @tablet-widths {
+    order: -1;
+  }
+  @media @desktop-widths {
+    width: 820px;
+    padding: 20px 60px;
+    .form__section-item {
+      width: 375px;
+    }
+  }
+}
+
+.form__section--user-achievement {
+  @media @desktop-widths {
+    flex-direction: row;
+    width: 100%;
+    height: 230px;
+    flex-wrap: wrap;
+    .form__item-name {
+      width: 260px;
+    }
+  }
+}
+
+.form__section--user-emotions {
+  @media @desktop-widths {
+    width: 820px;
+    padding: 20px 60px;
+  }
+}
+
+.form__item-name--mobile-none {
+  display: none;
+  @media @tablet-widths {
+    display: block;
+  }
+}
+
+.form__submit {
+  display: flex;
+  flex-direction: column;
+  width: @mobile-width-wrapper;
+  @media @tablet-widths {
+    width: @tablet-width-wrapper;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @media @desktop-widths {
+    width: @desktop-width-wrapper;
+  }
+}

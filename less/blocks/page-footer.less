@@ -1,4 +1,28 @@
 .page-footer {
 
-  outline: 2px solid red;
+  outline: 2px solid green;
+}
+
+.page-footer--mobile-none {
+  @media @mobile-width-only {
+    display: none;
+  }
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media @tablet-widths {
+    flex-direction: row;
+  }
+
+
+  outline: 2px solid blue;
+}
+
+.page-footer__section {
+  text-align: center;
+
+  outline: 2px solid yellow;
 }

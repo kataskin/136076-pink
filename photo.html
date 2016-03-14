@@ -6,38 +6,42 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <a href="index.html" class="page-header__logo">
-        <img src="http://placehold.it/50x50" alt="PINK" width="50" height="50">
-      </a>
+    <header class="page-header page-header--inner-page">
       <nav class="main-nav">
-        <a href="#" class="main-nav__icon-menu">Открыть/Закрыть</a>
-        <div class="main-nav__menu-hover">
-          <ul class="main-nav__menu-list">
-            <li class="main-nav__menu-item"><a href="#">Информация</a></li>
-            <li class="main-nav__menu-item"><a href="#">Возможности</a></li>
-            <li class="main-nav__menu-item"><a href="#">Отзывы</a></li>
-            <li class="main-nav__menu-item"><a href="#">Стоимость</a></li>
-          </ul>
+        <div class="main-nav__wrapper">
+          <div class="main-nav__logo">
+            <img src="http://placehold.it/50x50" alt="PINK" width="50" height="50">
+          </div>
+          <a href="#" class="main-nav__icon-menu">Открыть/Закрыть</a>
+          <div class="main-nav__menu">
+            <ul class="main-nav__menu-list">
+              <li class="main-nav__menu-item"><a href="index.html">Главная</a></li>
+              <li class="main-nav__menu-item"><span>Фотографии</span></li>
+              <li class="main-nav__menu-item"><a href="form.html">Конкурс</a></li>
+              <li class="main-nav__menu-item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
-    </header>
-    <main class="main-content">
-      <section class="presentation">
-        <div class="presentation__slogan">
+      <div class="page-header__wrapper">
+        <div class="page-header__slogan page-header__slogan--inner-page">
           Фотографии пользователей
         </div>
-      </section>
+      </div>
+    </header>
+    <main>
       <section class="photos">
-        <p class="photos__description">
-          Взгляните на фотографии, которые выкладывают пользователи!
-          Видите, как не хватает ваших?
-        </p>
-        <div class="user-post">
+        <div class="photos__wrapper">
+          <p class="photos__description">
+            Взгляните на фотографии, которые выкладывают пользователи!
+            Видите, как не хватает ваших?
+          </p>
+        </div>
+        <div class="user-post user-post--panoramic">
           <a href="#" class="user-post__link user-post__link--panoramic">
             <img src="http://placehold.it/50x50" class="user-post__img" alt="Панорама" width="50" height="50">
           </a>
-          <div class="user-post__detail">
+          <div class="photos__wrapper">
             <div class="user-post__user-detail">
               <span class="user-post__user-name">Анна</span>
               <time class="user-post__time" datetime="2004-07-24T18:18">(5 минут назад)</time>
@@ -49,11 +53,11 @@
             <span class="user-post__like">Нравится: 215</span>
           </div>
         </div>
-        <div class="user-post">
-          <a href="#" class="user-post__link">
-            <img src="http://placehold.it/50x50" class="user-post__img" alt="Камера" width="50" height="50">
-          </a>
-          <div class="user-post__detail">
+        <div class="photos__wrapper">
+          <div class="user-post">
+            <a href="#" class="user-post__link">
+              <img src="http://placehold.it/50x50" class="user-post__img" alt="Камера" width="50" height="50">
+            </a>
             <div class="user-post__user-detail">
               <span class="user-post__user-name">Левон</span>
               <time class="user-post__time" datetime="2004-07-24T18:18">(5 часов назад)</time>
@@ -63,12 +67,10 @@
             </p>
             <span class="user-post__like">Нравится: 356</span>
           </div>
-        </div>
-        <div class="user-post">
-          <a href="#" class="user-post__link">
-            <img src="http://placehold.it/50x50" class="user-post__img" alt="Барабан" width="50" height="50">
-          </a>
-          <div class="user-post__detail">
+          <div class="user-post">
+            <a href="#" class="user-post__link">
+              <img src="http://placehold.it/50x50" class="user-post__img" alt="Барабан" width="50" height="50">
+            </a>
             <div class="user-post__user-detail">
               <span class="user-post__user-name">Антон</span>
               <time class="user-post__time" datetime="2004-07-24T18:18">(12 часов назад)</time>
@@ -78,12 +80,10 @@
             </p>
             <span class="user-post__like">Нравится: 666</span>
           </div>
-        </div>
-        <div class="user-post">
-          <a href="#" class="user-post__link">
-            <img src="http://placehold.it/50x50" class="user-post__img" alt="Окна" width="50" height="50">
-          </a>
-          <div class="user-post__detail">
+          <div class="user-post">
+            <a href="#" class="user-post__link">
+              <img src="http://placehold.it/50x50" class="user-post__img" alt="Окна" width="50" height="50">
+            </a>
             <div class="user-post__user-detail">
               <span class="user-post__user-name">Борис</span>
               <time class="user-post__time" datetime="2004-07-24T18:18">(20 часов назад)</time>
@@ -93,12 +93,10 @@
             </p>
             <span class="user-post__like">Нравится: 215</span>
           </div>
-        </div>
-        <div class="user-post">
-          <a href="#" class="user-post__link">
-            <img src="http://placehold.it/50x50" class="user-post__img" alt="Кубанская Бахча" width="50" height="50">
-          </a>
-          <div class="user-post__detail">
+          <div class="user-post">
+            <a href="#" class="user-post__link">
+              <img src="http://placehold.it/50x50" class="user-post__img" alt="Кубанская Бахча" width="50" height="50">
+            </a>
             <div class="user-post__user-detail">
               <span class="user-post__user-name">Сергей</span>
               <time class="user-post__time" datetime="2004-07-24T18:18">(25 часов назад)</time>
@@ -108,12 +106,10 @@
             </p>
             <span class="user-post__like">Нравится: 4</span>
           </div>
-        </div>
-        <div class="user-post">
-          <a href="#" class="user-post__link">
-            <img src="http://placehold.it/50x50" class="user-post__img" alt="Природа" width="50" height="50">
-          </a>
-          <div class="user-post__detail">
+          <div class="user-post">
+            <a href="#" class="user-post__link">
+              <img src="http://placehold.it/50x50" class="user-post__img" alt="Природа" width="50" height="50">
+            </a>
             <div class="user-post__user-detail">
               <span class="user-post__user-name">Максим</span>
               <time class="user-post__time" datetime="2004-07-24T18:18">(40 часов назад)</time>
@@ -123,12 +119,10 @@
             </p>
             <span class="user-post__like">Нравится: 150</span>
           </div>
-        </div>
-        <div class="user-post">
-          <a href="#" class="user-post__link">
-            <img src="http://placehold.it/50x50" class="user-post__img" alt="Восход" width="50" height="50">
-          </a>
-          <div class="user-post__detail">
+          <div class="user-post">
+            <a href="#" class="user-post__link">
+              <img src="http://placehold.it/50x50" class="user-post__img" alt="Восход" width="50" height="50">
+            </a>
             <div class="user-post__user-detail">
               <span class="user-post__user-name">Надежда</span>
               <time class="user-post__time" datetime="2004-07-24T18:18">(45 часов назад)</time>
@@ -141,41 +135,51 @@
         </div>
       </section>
       <section class="my-post">
-        <p class="my-post__description">
-          Затмите их всех!<br>
-          Выкладывайте все, что накопилось в телефоне!
-        </p>
-        <div class="my-post__my-photo">
-          <form>
-            <img src="http://placehold.it/50x50" class="my-post__img" alt="Фото" width="50" height="50">
-            <ul class="my-post__toolbar">
-              <li class="my-post__toolbar-item my-post__toolbar-item--crop my-post__toolbar-item--active"></li>
-              <li class="my-post__toolbar-item my-post__toolbar-item--color"></li>
-              <li class="my-post__toolbar-item my-post__toolbar-item--contrast"></li>
-            </ul>
-            <ul class="my-post__toolbar-line">
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-            <button type="submit" class="btn btn--submit">Запостить</button>
-            <button type="reset" class="btn btn--cancel">Отмена</button>
-          </form>
+        <div class="my-post__wrapper">
+          <p class="my-post__description">
+            Затмите их всех!<br>
+            Выкладывайте все, что накопилось в телефоне!
+          </p>
+          <div class="my-post__my-photo">
+            <form class="my-post__form">
+              <img src="http://placehold.it/50x50" class="my-post__img" alt="Фото" width="50" height="50">
+              <ul class="my-post__toolbar">
+                <li class="my-post__toolbar-item my-post__toolbar-item--crop my-post__toolbar-item--active">
+                  <div class="my-post__toolbar-line">
+                  </div>
+                </li>
+                <li class="my-post__toolbar-item my-post__toolbar-item--color">
+                  <div class="my-post__toolbar-line">
+                  </div>
+                </li>
+                <li class="my-post__toolbar-item my-post__toolbar-item--contrast">
+                  <div class="my-post__toolbar-line">
+                  </div>
+                </li>
+              </ul>
+              <div class="my-post__buttons">
+                <button type="submit" class="btn btn--submit">Запостить</button>
+                <button type="reset" class="btn btn--cancel">Отмена</button>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__section">
-        <img src="http://placehold.it/50x50" class="page-footer__pink" alt="PINK" width="50" height="50">
-      </div>
-      <div class="page-footer__section">
-        <a href="#" class="page-footer__social page-footer__social--twitter">twitter</a>
-        <a href="#" class="page-footer__social page-footer__social--facebook">facebook</a>
-        <a href="#" class="page-footer__social page-footer__social--youtube">youtube</a>
-      </div>
-      <div class="page-footer__section">
-        <span class="page-footer__designed">Разработано</span>
-        <img src="http://placehold.it/50x50" class="page-footer__logo-htmlacademy" alt="htmlacademy" width="50" height="50">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__section">
+          <img src="http://placehold.it/50x50" class="page-footer__pink" alt="PINK" width="50" height="50">
+        </div>
+        <div class="page-footer__section">
+          <a href="#" class="page-footer__social page-footer__social--twitter">twitter</a>
+          <a href="#" class="page-footer__social page-footer__social--facebook">facebook</a>
+          <a href="#" class="page-footer__social page-footer__social--youtube">youtube</a>
+        </div>
+        <div class="page-footer__section">
+          <span class="page-footer__designed">Разработано</span>
+          <img src="http://placehold.it/50x50" class="page-footer__logo-htmlacademy" alt="htmlacademy" width="50" height="50">
+        </div>
       </div>
     </footer>
   </body>

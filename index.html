@@ -7,36 +7,38 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo">
-        <img src="http://placehold.it/50x50" alt="PINK" width="50" height="50">
-      </div>
       <nav class="main-nav">
-        <a href="#" class="main-nav__icon-menu">Открыть/Закрыть</a>
-        <div class="main-nav__menu-hover">
-          <ul class="main-nav__menu-list">
-            <li class="main-nav__menu-item"><a href="#">Информация</a></li>
-            <li class="main-nav__menu-item"><a href="#">Возможности</a></li>
-            <li class="main-nav__menu-item"><a href="#">Отзывы</a></li>
-            <li class="main-nav__menu-item"><a href="#">Стоимость</a></li>
-          </ul>
+        <div class="main-nav__wrapper">
+          <div class="main-nav__logo">
+            <img src="http://placehold.it/50x50" alt="PINK" width="50" height="50">
+          </div>
+          <a href="#" class="main-nav__icon-menu">Открыть/Закрыть</a>
+          <div class="main-nav__menu">
+            <ul class="main-nav__menu-list">
+              <li class="main-nav__menu-item"><span>Главная</span></li>
+              <li class="main-nav__menu-item"><a href="photo.html">Фотографии</a></li>
+              <li class="main-nav__menu-item"><a href="form.html">Конкурс</a></li>
+              <li class="main-nav__menu-item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
+      <div class="page-header__wrapper">
+        <div class="page-header__slogan page-header__slogan--main-page">Взгляните на жизнь иначе!</div>
+        <section class="download">
+          <a href="#" class="btn">Скачать приложение</a>
+          <div class="download__icons">
+            <a href="#" class="download__icon download__icon--apple"></a>
+            <a href="#" class="download__icon download__icon--android"></a>
+            <a href="#" class="download__icon download__icon--windows"></a>
+          </div>
+          <p class="download__text">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </section>
+      </div>
     </header>
-    <main class="main-content">
-      <section class="presentation">
-        <div class="presentation__slogan">Взгляните на жизнь иначе!</div>
-      </section>
-      <section class="download">
-        <a href="#" class="btn">Скачать приложение</a>
-        <div class="download__icons">
-          <a href="#" class="download__icon download__icon--apple"></a>
-          <a href="#" class="download__icon download__icon--android"></a>
-          <a href="#" class="download__icon download__icon--windows"></a>
-        </div>
-        <p class="download__text">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
-      </section>
+    <main class="page-wrapper">
       <section class="information">
         <div class="information__slogan">Устали от серости мегаполиса?</div>
         <div class="information__slogan">Нам есть, что вам предложить!</div>
@@ -60,25 +62,36 @@
             </p>
           </li>
         </ul>
-        <img src="http://placehold.it/50x50" class="information__img" alt="Всем привет!" width="50" height="50">
+        <div class="information__effect">
+          <h3 class="information__effect-slogan">Эффект на 24 часа!</h3>
+          <p class="information__effect-text">
+            Британские ученые провели исследования и доказали, что положительный
+            эффект от использования приложения длится целые сутки!
+          </p>
+          <a href="#" class="information__effect-link">Узнать больше об исследовании</a>
+        </div>
       </section>
       <section class="feedback">
+        <a href="" class="feedback__switch feedback__switch--prev"></a>
         <ul class="feedback__list">
           <li class="feedback__item">
+            <p class="feedback__user-detail">25 лет, водитель трамвая</p>
             <p class="feedback__user-name">Николай Петров</p>
             <p class="feedback__text">
               &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
               А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
             </p>
           </li>
-          <li class="feedback__item">
+          <li class="feedback__item feedback__item--none">
+            <p class="feedback__user-detail">25 лет, водитель трамвая</p>
             <p class="feedback__user-name">Николай Петров</p>
             <p class="feedback__text">
               &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
               А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
             </p>
           </li>
-          <li class="feedback__item">
+          <li class="feedback__item feedback__item--none">
+            <p class="feedback__user-detail">25 лет, водитель трамвая</p>
             <p class="feedback__user-name">Николай Петров</p>
             <p class="feedback__text">
               &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
@@ -86,64 +99,84 @@
             </p>
           </li>
         </ul>
+        <a href="#" class="feedback__switch feedback__switch--next"></a>
         <!-- Здесь будет переключатель -->
       </section>
       <section class="fares">
-        <ul class="fares__list">
-          <li class="fares__item">
-            <div class="fares__item-name">
+        <table class="fares__list">
+          <tr>
+            <td class="fares__item-name">
+            </td>
+            <td class="fares__item-name">
               <b>База</b>
-              <span>1,99 USD</span>
-            </div>
-            <ul class="fares__options">
-              <li class="fares__option fares__option--include">Розовый фильтр</li>
-              <li class="fares__option fares__option--exclude">Смайлики</li>
-              <li class="fares__option fares__option--exclude">Комментарии</li>
-            </ul>
-          </li>
-          <li class="fares__item">
-            <div class="fares__item-name fares__item-name--hit">
+              <span class="fares__price-item">1,99 USD</span>
+            </td>
+            <td class="fares__item-name fares__item-name--hit">
               <b>Стандарт</b>
-              <span>3,99 USD</span>
-            </div>
-            <ul class="fares__options">
-              <li class="fares__option fares__option--include">Розовый фильтр</li>
-              <li class="fares__option fares__option--include">Смайлики</li>
-              <li class="fares__option fares__option--exclude">Комментарии</li>
-            </ul>
-          </li>
-          <li class="fares__item">
-            <div class="fares__item-name">
+              <span class="fares__price-item">3,99 USD</span>
+            </td>
+            <td class="fares__item-name">
               <b>Анлим</b>
-              <span>9,99 USD</span>
-            </div>
-            <ul class="fares__options">
-              <li class="fares__option fares__option--include">Розовый фильтр</li>
-              <li class="fares__option fares__option--include">Смайлики</li>
-              <li class="fares__option fares__option--include">Комментарии</li>
-            </ul>
-          </li>
-        </ul>
+              <span class="fares__price-item">9,99 USD</span>
+            </td>
+          </tr>
+          <tr>
+            <td class="fares__filter-name">Розовый фильтр</td>
+            <td class="fares__option fares__option--include">Розовый фильтр</td>
+            <td class="fares__option fares__option--include">Розовый фильтр</td>
+            <td class="fares__option fares__option--include">Розовый фильтр</td>
+          </tr>
+          <tr>
+            <td class="fares__filter-name">Смайлики</td>
+            <td class="fares__option fares__option--exclude">Смайлики</td>
+            <td class="fares__option fares__option--include">Смайлики</td>
+            <td class="fares__option fares__option--include">Смайлики</td>
+          </tr>
+          <tr>
+            <td class="fares__filter-name">Комментарии</td>
+            <td class="fares__option fares__option--exclude">Комментарии</td>
+            <td class="fares__option fares__option--exclude">Комментарии</td>
+            <td class="fares__option fares__option--include">Комментарии</td>
+          </tr>
+        </table>
         <!-- Здесь будет переключатель -->
       </section>
     </main>
     <div class="contacts">
-      <!-- Здесь будет карта -->
-      <div class="contacts__detail">
-        <div class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</div>
-        <div class="contacts__item">
-          <b>Звоните:</b>
-          <a href="tel:+7(812)555-66-66">+7(812)555-66-66</a>
-        </div>
-        <div class="contacts__item">
-          <b>Пишите:</b>
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </div>
-        <div class="contacts__item">
-          <b>Приезжайте в гости:</b>
-          <span>ул. Большая Конюшенная, 19/8</span>
+      <div class="contacts__wrapper">
+        <div class="contacts__detail">
+          <div class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</div>
+          <div class="contacts__item">
+            <b class="contacts__item-name">Звоните:</b>
+            <a href="tel:+7(812)555-66-66" class="contacts__item-detail">+7(812)555-66-66</a>
+          </div>
+          <div class="contacts__item contacts__item--order">
+            <b class="contacts__item-name">Пишите:</b>
+            <a href="mailto:mail@htmlacademy.ru" class="contacts__item-detail">mail@htmlacademy.ru</a>
+          </div>
+          <div class="contacts__item">
+            <b class="contacts__item-name">Приезжайте в гости:</b>
+            <span class="contacts__item-detail">ул. Большая Конюшенная, 19/8</span>
+          </div>
         </div>
       </div>
+      <div class="contacts__map"></div>
     </div>
+    <footer class="page-footer page-footer--mobile-none">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__section">
+          <img src="http://placehold.it/50x50" class="page-footer__pink" alt="PINK" width="50" height="50">
+        </div>
+        <div class="page-footer__section">
+          <a href="#" class="page-footer__social page-footer__social--twitter">twitter</a>
+          <a href="#" class="page-footer__social page-footer__social--facebook">facebook</a>
+          <a href="#" class="page-footer__social page-footer__social--youtube">youtube</a>
+        </div>
+        <div class="page-footer__section">
+          <span class="page-footer__designed">Разработано</span>
+          <img src="http://placehold.it/50x50" class="page-footer__logo-htmlacademy" alt="htmlacademy" width="50" height="50">
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

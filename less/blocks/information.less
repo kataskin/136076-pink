@@ -1,4 +1,59 @@
 .information {
+  text-align: center;
 
   outline: 2px solid red;
+}
+
+.information__slogan {
+
+  min-height: 30px;
+}
+
+.information__characteristics-list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 300px;
+  list-style: none;
+  text-align: center;
+  @media @tablet-widths {
+    padding-left: 300px;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+  @media @desktop-widths {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 350px;
+    padding: 0;
+    text-align: center;
+  }
+
+  outline: 2px solid green;
+}
+
+.information__characteristics-item {
+  @media @desktop-widths {
+    width: 305px;
+    padding: 0 30px;
+  }
+
+  outline: 2px solid yellow;
+}
+
+.information__effect {
+  display: none;
+  @media @tablet-widths {
+    display: block;
+    padding-left: 300px;
+    text-align: left;
+  }
+  @media @desktop-widths {
+    padding-left: 360px;
+  }
+
+  outline: 2px solid yellow;
+}
+
+.information__effect-slogan {
+  margin: 0;
 }

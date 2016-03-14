@@ -1,4 +1,45 @@
 .page-header {
 
   outline: 2px solid red;
+  min-height: 460px;
+}
+
+.page-header--inner-page {
+  min-height: 240px;
+  @media @tablet-widths {
+    min-height: 440px;
+  }
+  @media @desktop-widths {
+    min-height: 400px;
+  }
+}
+
+.page-header__slogan {
+  width: @mobile-width-wrapper;
+  margin: 0 auto 300px;
+  text-align: center;
+  @media @tablet-widths {
+    width: 300px;
+    margin: 0;
+  }
+
+  outline: 2px solid red;
+  min-height: 80px;
+}
+
+.page-header__slogan--main-page {
+  @media @mobile-width-only {
+    display: none;
+  }
+}
+
+.page-header__slogan--inner-page {
+  margin: 0 auto;
+  @media @tablet-widths {
+    width: 500px;
+    margin: 0 auto;
+  }
+  @media @desktop-widths {
+    width: 820px;
+  }
 }
