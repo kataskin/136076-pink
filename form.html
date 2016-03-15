@@ -36,7 +36,7 @@
           1000 миль на вашу бонусную карту!
         </p>
         <form class="form__main-field">
-          <fieldset class="form__section form__section--user-detail">
+          <div class="form__section form__section--user-detail">
             <div class="form__section-item">
               <label for="user-name" class="form__item-name">Имя:</label>
               <input type="text" class="form__item" id="user-name" placeholder="Введите ваше имя">
@@ -49,11 +49,11 @@
               <label for="user-patronymic" class="form__item-name">Отчество:</label>
               <input type="text" class="form__item" id="user-patronymic" placeholder="Ну и отчество тоже">
             </div>
-          </fieldset>
-          <fieldset class="form__section form__section--user-achievement">
-            <legend class="form__item-name form__item-name--align">
+          </div>
+          <div class="form__section form__section--user-achievement">
+            <div class="form__item-name form__item-name--align">
               Ваши безбашенные достижения в путешествии
-            </legend>
+            </div>
             <input type="checkbox" class="form__checkbox" id="selfie-with-shark" name="selfie-with-shark" checked>
             <label for="selfie-with-shark" class="form__option form__option--checkbox">
               Сделал селфи с акулой
@@ -78,11 +78,11 @@
             <label for="destroyed-hotel" class="form__option form__option--checkbox">
               Разгромил отель
             </label>
-          </fieldset>
-          <fieldset class="form__section form__section--user-contact">
-            <legend class="form__item-name form__item-name--align form__item-name--mobile-none">
+          </div>
+          <div class="form__section form__section--user-contact">
+            <div class="form__item-name form__item-name--align form__item-name--mobile-none">
               Контактная информация
-            </legend>
+            </div>
             <div class="form__section-item form__section-item--user-contact">
               <label for="user-phone" class="form__item-name form__item-name--mobile-only">
                 Номерок телефончика
@@ -101,11 +101,11 @@
                 Адрес почты
               </label>
             </div>
-          </fieldset>
-          <fieldset class="form__section form__section--user-app">
-            <legend class="form__item-name form__item-name--align">
+          </div>
+          <div class="form__section form__section--user-app">
+            <div class="form__item-name form__item-name--align">
               С каким приложением путешествовали?
-            </legend>
+            </div>
             <input type="radio" class="form__radio" id="iOS" name="mobile-app" checked>
             <label for="iOS" class="form__option form__option--radio">
               Pink для iOS
@@ -118,13 +118,13 @@
             <label for="Windows-phone" class="form__option form__option--radio">
               Windows Phone
             </label>
-          </fieldset>
-          <fieldset class="form__section form__section--user-emotions">
-            <legend for="emotions" class="form__item-name form__item-name--align">
+          </div>
+          <div class="form__section form__section--user-emotions">
+            <label for="emotions" class="form__item-name form__item-name--align">
               Опишите свои эмоции
-            </legend>
+            </label>
             <textarea class="form__item form__item--textarea" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </fieldset>
+          </div>
           <div class="form__submit">
             <button type="submit" class="form-btn">Отправить форму</button>
             <p class="form__required"><sup>*</sup>&mdash; обязательные поля</p>

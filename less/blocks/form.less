@@ -29,27 +29,13 @@
   padding: 0;
   border: none;
   @media @tablet-widths {
-    width: 500px;
-    padding: 30px 60px;
+    width: 620px;
   }
   @media @desktop-widths {
-    flex-wrap: nowrap;
+    flex-direction: column;
   }
 
   outline: 2px solid yellow;
-}
-
-.form__section-item {
-  display: flex;
-  flex-direction: column;
-  @media @tablet-widths {
-    flex-direction: row;
-    &--user-contact {
-      flex-wrap: wrap;
-    }
-  }
-
-  outline: 2px solid green;
 }
 
 .form__item-name {
@@ -64,12 +50,37 @@
   }
 }
 
+.form__item-name--mobile-none {
+  display: none;
+  @media @tablet-widths {
+    display: block;
+  }
+}
+
+.form__section-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  @media @tablet-widths {
+    flex-direction:row;
+    &--user-contact {
+      flex-direction: column;
+    }
+  }
+}
+
 .form__item-name--align {
+  width: 100%;
   text-align: center;
 }
 
 .form__item {
   width: 100%;
+  @media @tablet-widths {
+    width: auto;
+    flex-grow: 1;
+  }
 }
 
 .form__item--textarea {
@@ -77,6 +88,7 @@
 }
 
 .form__option {
+  width: auto;
   margin-left: 70px;
 
   outline: 2px solid green;
@@ -90,31 +102,31 @@
 
 .form__section--user-detail {
   order: -3;
-  padding: 0;
-  @media @tablet-widths {
-    width: @tablet-width-wrapper;
-  }
   @media @desktop-widths {
-    width: 433px;
+    justify-content: space-between;
+    width: 436px;
   }
 }
 
 .form__section--user-app {
   @media @tablet-widths {
     order: -2;
+    flex-direction: column;
   }
   @media @desktop-widths {
-    width: 300px;
+    width: 433px;
   }
 }
 
 .form__section--user-contact {
   @media @tablet-widths {
     order: -1;
+    padding: 20px 60px;
   }
   @media @desktop-widths {
     width: 820px;
-    padding: 20px 60px;
+    flex-direction: row;
+    justify-content: space-between;
     .form__section-item {
       width: 375px;
     }
@@ -122,13 +134,24 @@
 }
 
 .form__section--user-achievement {
+  @media @tablet-widths {
+    flex-direction: column;
+  }
   @media @desktop-widths {
-    flex-direction: row;
+    position: relative;
     width: 100%;
-    height: 230px;
+    height: 100px;
+    padding-top: 50px;
     flex-wrap: wrap;
     .form__item-name {
-      width: 260px;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -215px;
+      width: 430px;
+    }
+    .form__option {
+      width: 230px;
     }
   }
 }
@@ -137,13 +160,6 @@
   @media @desktop-widths {
     width: 820px;
     padding: 20px 60px;
-  }
-}
-
-.form__item-name--mobile-none {
-  display: none;
-  @media @tablet-widths {
-    display: block;
   }
 }
 
