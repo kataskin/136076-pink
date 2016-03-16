@@ -16,10 +16,10 @@
           <a href="#" class="main-nav__icon-menu">Открыть/Закрыть</a>
           <div class="main-nav__menu">
             <ul class="main-nav__menu-list">
-              <li class="main-nav__menu-item"><a class="main-nav__menu-item--active">Главная</a></li>
-              <li class="main-nav__menu-item"><a href="photo.html">Фотографии</a></li>
-              <li class="main-nav__menu-item"><a href="form.html">Конкурс</a></li>
-              <li class="main-nav__menu-item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+              <li class="main-nav__menu-item"><a class="main-nav__menu-link">Главная</a></li>
+              <li class="main-nav__menu-item"><a href="photo.html" class="main-nav__menu-link">Фотографии</a></li>
+              <li class="main-nav__menu-item"><a href="form.html" class="main-nav__menu-link">Конкурс</a></li>
+              <li class="main-nav__menu-item"><a href="https://htmlacademy.ru/" class="main-nav__menu-link">HTML Academy</a></li>
             </ul>
           </div>
         </div>
@@ -111,39 +111,43 @@
         <div class="fares__wrapper">
           <table class="fares__list">
             <thead>
-              <th class="fares__item-name">
-              </th>
-              <th class="fares__item-name">
-                <b class="fares__price-name">База</b>
-                <span class="fares__price-item">1,99 USD</span>
-              </th>
-              <th class="fares__item-name fares__item-name--hit">
-                <b class="fares__price-name">Стандарт</b>
-                <span class="fares__price-item">3,99 USD</span>
-              </th>
-              <th class="fares__item-name">
-                <b class="fares__price-name">Анлим</b>
-                <span class="fares__price-item">9,99 USD</span>
-              </th>
+              <tr>
+                <th class="fares__item-name">
+                </th>
+                <th class="fares__item-name">
+                  <b class="fares__price-name">База</b>
+                  <span class="fares__price-item">1,99 USD</span>
+                </th>
+                <th class="fares__item-name fares__item-name--hit">
+                  <b class="fares__price-name">Стандарт</b>
+                  <span class="fares__price-item">3,99 USD</span>
+                </th>
+                <th class="fares__item-name">
+                  <b class="fares__price-name">Анлим</b>
+                  <span class="fares__price-item">9,99 USD</span>
+                </th>
+              </tr>
             </thead>
-            <tr>
-              <td class="fares__filter-name">Розовый фильтр</td>
-              <td class="fares__option fares__option--include">Розовый фильтр</td>
-              <td class="fares__option fares__option--include">Розовый фильтр</td>
-              <td class="fares__option fares__option--include">Розовый фильтр</td>
-            </tr>
-            <tr>
-              <td class="fares__filter-name">Смайлики</td>
-              <td class="fares__option fares__option--exclude">Смайлики</td>
-              <td class="fares__option fares__option--include">Смайлики</td>
-              <td class="fares__option fares__option--include">Смайлики</td>
-            </tr>
-            <tr>
-              <td class="fares__filter-name">Комментарии</td>
-              <td class="fares__option fares__option--exclude">Комментарии</td>
-              <td class="fares__option fares__option--exclude">Комментарии</td>
-              <td class="fares__option fares__option--include">Комментарии</td>
-            </tr>
+            <tbody>
+              <tr>
+                <td class="fares__filter-name">Розовый фильтр</td>
+                <td class="fares__option fares__option--include">Розовый фильтр</td>
+                <td class="fares__option fares__option--include">Розовый фильтр</td>
+                <td class="fares__option fares__option--include">Розовый фильтр</td>
+              </tr>
+              <tr>
+                <td class="fares__filter-name">Смайлики</td>
+                <td class="fares__option fares__option--exclude">Смайлики</td>
+                <td class="fares__option fares__option--include">Смайлики</td>
+                <td class="fares__option fares__option--include">Смайлики</td>
+              </tr>
+              <tr>
+                <td class="fares__filter-name">Комментарии</td>
+                <td class="fares__option fares__option--exclude">Комментарии</td>
+                <td class="fares__option fares__option--exclude">Комментарии</td>
+                <td class="fares__option fares__option--include">Комментарии</td>
+              </tr>
+            </tbody>
           </table>
           <!-- Здесь будет переключатель -->
         </div>
