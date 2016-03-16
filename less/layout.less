@@ -1,0 +1,29 @@
+body {
+
+}
+
+.page-header__wrapper,
+.main-nav__wrapper,
+.page-wrapper,
+.information__wrapper,
+.feedback__wrapper,
+.fares__wrapper,
+.contacts__wrapper,
+.photos__wrapper,
+.user-post__wrapper,
+.my-post__wrapper,
+.page-footer__wrapper {
+  width: @mobile-width-wrapper;
+  margin: 0 auto;
+  padding: 0 @mobile-width-wrapper-padding;
+  @media @tablet-widths {
+    width: @tablet-width-wrapper;
+    padding: 0 @tablet-width-wrapper-padding;
+  }
+  @media @desktop-widths {
+    width: @desktop-width-wrapper;
+    padding: 0 @desktop-width-wrapper-padding;
+  }
+
+  outline: 2px solid blue;
+}

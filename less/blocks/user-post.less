@@ -1,4 +1,42 @@
 .user-post {
+  @media @tablet-widths {
+    width: 300px;
+  }
 
   outline: 2px solid red;
+}
+
+.user-post--panoramic {
+  width: 100%;
+  .user-post__user-detail {
+    @media @tablet-widths {
+      max-width: 440px;//чтобы не наползало на блок Нравится; на десктопе можно больше поставить
+    }
+  }
+  .user-post__comment {
+    @media @tablet-widths {
+      order: 1;
+    }
+  }
+}
+
+.user-post__inner-wrapper {
+  display: flex;//критерий Б16
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.user-post__link {
+  width: 100%;
+}
+
+.user-post__inner-wrapper {
+  margin: 10px 20px;
+  @media @tablet-widths {
+    margin-left: 30px;
+  }
+}
+
+.user-post__comment {
+  width: 100%;
 }

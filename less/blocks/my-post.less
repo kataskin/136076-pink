@@ -2,3 +2,121 @@
 
   outline: 2px solid yellow;
 }
+
+.my-post__description {
+  text-align: center;
+}
+
+.my-post__form {
+  display: flex;
+  flex-direction: column;
+  @media @tablet-widths {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.my-post__my-photo {
+  @media @desktop-widths {
+    padding: 60px 60px 60px 80px;
+  }
+
+  outline: 2px solid green;
+}
+
+.my-post__img {
+  width: @mobile-width-wrapper;
+  height: auto;
+  @media @tablet-widths {
+    width: 300px;
+    align-self: flex-start;
+  }
+
+  outline: 2px solid red;
+}
+
+.my-post__inner-wrapper {
+  width: 100%;
+  @media @tablet-widths {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 275px;
+  }
+  @media @desktop-widths {
+    width: 410px;
+  }
+}
+
+.my-post__toolbar {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 150px 0;
+  list-style: none;
+  justify-content: space-around;
+  @media @tablet-widths {
+    flex-direction: column;
+    width: 260px;
+    padding: 0;
+  }
+  @media @desktop-widths {
+    width: 410px;
+  }
+}
+
+.my-post__toolbar-item {
+  display: flex;
+
+  outline: 2px solid green;
+}
+
+.my-post__tool {
+  width: 60px;
+  height: 60px;
+
+  outline: 2px solid yellow;
+}
+
+
+.my-post__tool-line {
+  display: none;
+  width: @mobile-width-wrapper;
+  height: 50px;
+  @media @tablet-widths {
+    display: block;
+    flex-grow: 1;//так вообще можно делать? это потом возможно будет к JS привязать в таком формате?
+  }
+  @media @desktop-widths {
+    width: 340px;
+  }
+
+  outline: 2px solid red;
+}
+
+.my-post__toolbar-item--active .my-post__tool-line {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  display: block;
+  @media @tablet-widths {
+    position: static;
+  }
+}
+
+.my-post__buttons {
+  width: 100%;
+  @media @tablet-widths {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 260px;
+  }
+  @media @desktop-widths {
+    flex-direction: row;
+    width: 410px;
+  }
+
+  outline: 2px solid yellow;
+}

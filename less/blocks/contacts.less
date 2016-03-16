@@ -2,3 +2,45 @@
 
   outline: 2px solid red;
 }
+
+.contacts__detail {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  @media @tablet-widths {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  outline: 2px solid green;
+}
+
+.contacts__slogan {
+  text-align: center;
+}
+
+.contacts__item {
+  @media @tablet-widths {
+    width: 310px;
+  }
+
+  outline: 2px solid yellow;
+}
+
+.contacts__item--order {
+  @media @desktop-widths {
+    order: 1;
+  }
+}
+
+.contacts__item-name,
+.contacts__item-detail {
+  display: block;
+}
+
+.contacts__map {
+  height: 200px;
+
+  outline: 2px solid yellow;
+}
