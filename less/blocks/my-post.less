@@ -9,11 +9,9 @@
 
 .my-post__form {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  flex-direction: column;
   @media @tablet-widths {
-    flex-direction: column;
-    height: 400px;
+    flex-direction: row;
     justify-content: space-between;
   }
 }
@@ -28,13 +26,26 @@
 
 .my-post__img {
   width: @mobile-width-wrapper;
-  height: 373px;
+  height: auto;
   @media @tablet-widths {
     width: 300px;
-    height: 400px;
+    align-self: flex-start;
   }
 
   outline: 2px solid red;
+}
+
+.my-post__inner-wrapper {
+  width: 100%;
+  @media @tablet-widths {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 275px;
+  }
+  @media @desktop-widths {
+    width: 410px;
+  }
 }
 
 .my-post__toolbar {
@@ -42,44 +53,40 @@
   display: flex;
   width: 100%;
   margin: 0;
-  margin-bottom: 75px;
-  padding: 0;
+  padding: 0 0 150px 0;
   list-style: none;
   justify-content: space-around;
   @media @tablet-widths {
     flex-direction: column;
     width: 260px;
+    padding: 0;
   }
   @media @desktop-widths {
     width: 410px;
   }
+}
+
+.my-post__toolbar-item {
+  display: flex;
 
   outline: 2px solid green;
 }
 
-.my-post__toolbar-item {
+.my-post__tool {
   width: 60px;
   height: 60px;
-  @media @tablet-widths {
-    position: relative;
-  }
 
   outline: 2px solid yellow;
 }
 
 
-.my-post__toolbar-line {
-  position: absolute;
-  top:  70px;
-  left: 0;
+.my-post__tool-line {
   display: none;
   width: @mobile-width-wrapper;
   height: 50px;
   @media @tablet-widths {
-    top: 0;
-    left: 70px;
     display: block;
-    width: 190px;
+    flex-grow: 1;//так вообще можно делать? это потом возможно будет к JS привязать в таком формате?
   }
   @media @desktop-widths {
     width: 340px;
@@ -88,8 +95,14 @@
   outline: 2px solid red;
 }
 
-.my-post__toolbar-item--active .my-post__toolbar-line {
+.my-post__toolbar-item--active .my-post__tool-line {
+  position: absolute;
+  top: 100px;
+  left: 0;
   display: block;
+  @media @tablet-widths {
+    position: static;
+  }
 }
 
 .my-post__buttons {

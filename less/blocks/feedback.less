@@ -43,6 +43,10 @@
   }
 }
 
+.feedback__item--none {
+  display: none;
+}
+
 .feedback__user-detail {
   display: none;
   @media @tablet-widths {
@@ -50,6 +54,20 @@
   }
 }
 
-.feedback__item--none {
-  display: none;
+.feedback__text {
+  margin: 0;
+  &::before {
+    content: "«";
+  }
+  &::after {
+    content: "»";
+  }
+  @media @desktop-widths {
+    &::before {
+      content: "";
+    }
+    &::after {
+      content: "";
+    }
+  }
 }

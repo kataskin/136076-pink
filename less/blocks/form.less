@@ -70,6 +70,13 @@
   }
 }
 
+.form__section-item--user-contact {
+  @media @tablet-widths {
+    position: relative;
+    ::-webkit-input-placeholder {color: #ffffff;}
+    ::-moz-placeholder {color: #ffffff;}  }
+}
+
 .form__item-name--align {
   width: 100%;
   text-align: center;
@@ -93,6 +100,10 @@
 
   outline: 2px solid green;
   min-height: 40px;
+}
+
+.form__option--odd {
+  order: 1;
 }
 
 .form__checkbox,
@@ -133,6 +144,16 @@
   }
 }
 
+.form__placeholder {
+  display: none;
+  @media @tablet-widths {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+}
+
 .form__section--user-achievement {
   @media @tablet-widths {
     flex-direction: column;
@@ -140,7 +161,7 @@
   @media @desktop-widths {
     position: relative;
     width: 100%;
-    height: 100px;
+    flex-direction: row;
     padding-top: 50px;
     flex-wrap: wrap;
     .form__item-name {
@@ -166,13 +187,9 @@
 .form__submit {
   display: flex;
   flex-direction: column;
-  width: @mobile-width-wrapper;
+  width: 100%;
   @media @tablet-widths {
-    width: @tablet-width-wrapper;
     flex-direction: row;
     justify-content: space-between;
-  }
-  @media @desktop-widths {
-    width: @desktop-width-wrapper;
   }
 }

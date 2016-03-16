@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Конкурс</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -17,7 +18,7 @@
             <ul class="main-nav__menu-list">
               <li class="main-nav__menu-item"><a href="index.html">Главная</a></li>
               <li class="main-nav__menu-item"><a href="photo.html">Фотографии</a></li>
-              <li class="main-nav__menu-item"><span>Конкурс</span></li>
+              <li class="main-nav__menu-item"><a class="main-nav__menu-item--active">Конкурс</a></li>
               <li class="main-nav__menu-item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
             </ul>
           </div>
@@ -59,7 +60,7 @@
               Сделал селфи с акулой
             </label>
             <input type="checkbox" class="form__checkbox" id="burned-on-beach" name="burned-on-beach" checked>
-            <label for="burned-on-beach" class="form__option form__option--checkbox">
+            <label for="burned-on-beach" class="form__option form__option--checkbox form__option--odd">
               Обгорел на пляже
             </label>
             <input type="checkbox" class="form__checkbox" id="seen-Chuck-Norris" name="seen-Chuck-Norris">
@@ -67,7 +68,7 @@
               Видел Чака Норриса
             </label>
             <input type="checkbox" class="form__checkbox" id="bought-souvenirs" name="bought-souvenirs">
-            <label for="bought-souvenirs" class="form__option form__option--checkbox">
+            <label for="bought-souvenirs" class="form__option form__option--checkbox  form__option--odd">
               Накупил сувениров
             </label>
             <input type="checkbox" class="form__checkbox" id="pinned-tower" name="pinned-tower" checked>
@@ -75,7 +76,7 @@
               Удержал башню
             </label>
             <input type="checkbox" class="form__checkbox" id="destroyed-hotel" name="destroyed-hotel">
-            <label for="destroyed-hotel" class="form__option form__option--checkbox">
+            <label for="destroyed-hotel" class="form__option form__option--checkbox form__option--odd">
               Разгромил отель
             </label>
           </div>
@@ -88,6 +89,7 @@
                 Номерок телефончика
               </label>
               <input type="tel" class="form__item" id="user-phone" name="user-phone" placeholder="Номер, пожалуйста">
+              <label for="user-phone" class="form__placeholder">+7 XXX XXX-XX-XX</label>
               <label for="user-phone" class="form__item-name form__item-name--mobile-none">
                 Номер телефона
               </label>
@@ -97,6 +99,7 @@
                 Адресок почты
               </label>
               <input type="email" class="form__item" id="user-email" name="user-email" placeholder="E-mail, пожалуйста">
+              <label for="user-phone" class="form__placeholder">Введите почту</label>
               <label for="user-email" class="form__item-name form__item-name--mobile-none">
                 Адрес почты
               </label>
