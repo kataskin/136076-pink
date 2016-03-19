@@ -1,9 +1,23 @@
 .btn {
   display: block;
+  box-sizing: border-box;
   width: 100%;
-  margin: 20px 0 0;
+  min-height: 49px;
+  font-size: 18px;
+  line-height: 49px;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  border: 3px solid #ffffff;
+  border-radius: 30px;
 
   outline: 2px solid green;
+}
+
+.btn--download {
+  @media @desktop-widths {
+    font-size: 21px;
+  }
 }
 
 .btn--submit,
@@ -14,4 +28,16 @@
   @media @desktop-widths {
     width: 185px;
   }
+}
+
+.btn--submit {
+  color: #d22856;
+  border-color: #d22856;
+  background-color: #f2f2f2;
+}
+
+.btn--cancel {
+  color: rgba(40, 54, 68, 0.1);
+  border-color: rgba(40, 54, 68, 0.1);
+  background-color: #f2f2f2;
 }

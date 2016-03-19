@@ -1,10 +1,38 @@
 .my-post {
+  background-color: #f2f2f2;
+  @media @desktop-widths {
+    background-color: #ffffff;
+  }
 
   outline: 2px solid yellow;
 }
 
+.my-post__wrapper--description {
+  width: 100%;
+  padding: 0;
+  background-color: #ffffff;
+}
+
 .my-post__description {
+  width: @mobile-width-wrapper;
+  margin: 0 auto;
+  padding-bottom: 42px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  font-weight: 400;
   text-align: center;
+  @media @tablet-widths {
+    width: @tablet-width-wrapper;
+    padding-bottom: 67px;
+    font-size: 18px;
+  }
+  @media @desktop-widths {
+    width: @desktop-width-wrapper;
+    padding-bottom: 65px;
+  }
+
+  outline: 2px solid green;
 }
 
 .my-post__form {
@@ -17,8 +45,13 @@
 }
 
 .my-post__my-photo {
+  padding: 20px 0 0 0;
+  @media @tablet-widths {
+    padding: 61px 0 52px 0;
+  }
   @media @desktop-widths {
-    padding: 60px 60px 60px 80px;
+    padding: 58px 60px 60px 80px;
+    background-color: #f2f2f2;
   }
 
   outline: 2px solid green;
@@ -26,9 +59,11 @@
 
 .my-post__img {
   width: @mobile-width-wrapper;
-  height: auto;
+  height: 373px; //Убрать потом!!!!!!!!!!!!!!!!!
+  //height: auto;!!!!!!!!!!!!!!!!!!!!!!
   @media @tablet-widths {
     width: 300px;
+    height: 400px;//Убрать!!!!!!!!!!!!!!!
     align-self: flex-start;
   }
 
@@ -37,44 +72,63 @@
 
 .my-post__inner-wrapper {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   @media @tablet-widths {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     width: 275px;
   }
   @media @desktop-widths {
     width: 410px;
   }
+
+  outline: 2px solid red;
 }
 
 .my-post__toolbar {
   position: relative;
   display: flex;
-  width: 100%;
   margin: 0;
-  padding: 0 0 150px 0;
+  padding: 42px 19px 113px 19px;
   list-style: none;
-  justify-content: space-around;
+  justify-content: center;
   @media @tablet-widths {
     flex-direction: column;
-    width: 260px;
+    width: 100%;
     padding: 0;
+    margin-top: -18px;
   }
   @media @desktop-widths {
     width: 410px;
   }
+
+  outline: 2px solid yellow;
 }
 
 .my-post__toolbar-item {
   display: flex;
+  margin: 0 auto;
+  @media @tablet-widths {
+    width: 100%;
+    height: 72px;
+    align-items: center;
+  }
 
   outline: 2px solid green;
 }
 
 .my-post__tool {
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
+  @media @tablet-widths {
+    width: 40px;
+    height: 28px;
+    margin-right: 5px;
+  }
+  @media @desktop-widths {
+    width: 50px;
+    height: 45px;
+  }
 
   outline: 2px solid yellow;
 }
@@ -82,14 +136,15 @@
 
 .my-post__tool-line {
   display: none;
-  width: @mobile-width-wrapper;
-  height: 50px;
+  width: @mobile-width-wrapper + 2 * @mobile-width-wrapper-padding;
+  height: 70px;
   @media @tablet-widths {
     display: block;
     flex-grow: 1;//так вообще можно делать? это потом возможно будет к JS привязать в таком формате?
+    height: 28px;
   }
   @media @desktop-widths {
-    width: 340px;
+    height: 42px;
   }
 
   outline: 2px solid red;
@@ -97,25 +152,30 @@
 
 .my-post__toolbar-item--active .my-post__tool-line {
   position: absolute;
-  top: 100px;
-  left: 0;
+  top: 90px;
+  left: -@mobile-width-wrapper-padding;
   display: block;
+  border-bottom: 1px solid #dddfe0;
   @media @tablet-widths {
     position: static;
   }
 }
 
 .my-post__buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
+  min-height: 122px;
   @media @tablet-widths {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 260px;
+    width: 100%;
+    min-height: 137px;
   }
   @media @desktop-widths {
     flex-direction: row;
+    align-items: flex-end;
     width: 410px;
+    min-height: 104px;
   }
 
   outline: 2px solid yellow;

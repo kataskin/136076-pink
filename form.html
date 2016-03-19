@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="page-header page-header--inner-page">
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--inner-page">
         <div class="main-nav__wrapper">
           <div class="main-nav__logo">
             <img src="http://placehold.it/50x50" alt="PINK" width="50" height="50">
@@ -33,26 +33,32 @@
     <main class="page-wrapper">
       <section class="form">
         <p class="form__description">
-          Поделитесь своей историейи получите шанс выиграть ценный приз &mdash;
+          Поделитесь своей историей и получите шанс выиграть ценный приз &mdash;
           1000 миль на вашу бонусную карту!
         </p>
         <form class="form__main-field">
           <div class="form__section form__section--user-detail">
-            <div class="form__section-item">
-              <label for="user-name" class="form__item-name">Имя:</label>
+            <div class="form__section-item form__section-item--user-detail">
+              <label for="user-name" class="form__item-name form__item-name--user-detail">
+                Имя:
+              </label>
               <input type="text" class="form__item" id="user-name" placeholder="Введите ваше имя">
             </div>
-            <div class="form__section-item">
-              <label for="user-surname" class="form__item-name">Фамилия:</label>
+            <div class="form__section-item form__section-item--user-detail">
+              <label for="user-surname" class="form__item-name form__item-name--user-detail">
+                Фамилия:
+              </label>
               <input type="text" class="form__item" id="user-surname" placeholder="Укажите фамилию">
             </div>
-            <div class="form__section-item">
-              <label for="user-patronymic" class="form__item-name">Отчество:</label>
+            <div class="form__section-item form__section-item--user-detail">
+              <label for="user-patronymic" class="form__item-name form__item-name--user-detail">
+                Отчество:
+              </label>
               <input type="text" class="form__item" id="user-patronymic" placeholder="Ну и отчество тоже">
             </div>
           </div>
           <div class="form__section form__section--user-achievement">
-            <div class="form__item-name form__item-name--align">
+            <div class="form__item-name form__item-name--achievement">
               Ваши безбашенные достижения в путешествии
             </div>
             <input type="checkbox" class="form__checkbox" id="selfie-with-shark" name="selfie-with-shark" checked>
@@ -81,7 +87,7 @@
             </label>
           </div>
           <div class="form__section form__section--user-contact">
-            <div class="form__item-name form__item-name--align form__item-name--mobile-none">
+            <div class="form__item-name form__item-name--contact">
               Контактная информация
             </div>
             <div class="form__section-item form__section-item--user-contact">
@@ -104,7 +110,7 @@
             </div>
           </div>
           <div class="form__section form__section--user-app">
-            <div class="form__item-name form__item-name--align">
+            <div class="form__item-name form__item-name--app">
               С каким приложением путешествовали?
             </div>
             <input type="radio" class="form__radio" id="iOS" name="mobile-app" checked>
@@ -121,14 +127,14 @@
             </label>
           </div>
           <div class="form__section form__section--user-emotions">
-            <label for="emotions" class="form__item-name form__item-name--align">
+            <label for="emotions" class="form__item-name form__item-name--textarea">
               Опишите свои эмоции
             </label>
             <textarea class="form__item form__item--textarea" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </div>
           <div class="form__submit">
             <button type="submit" class="form-btn">Отправить форму</button>
-            <p class="form__required"><sup>*</sup>&mdash; обязательные поля</p>
+            <p class="form__required"><span>*</span> &mdash; обязательные </p>
           </div>
         </form>
       </section>
