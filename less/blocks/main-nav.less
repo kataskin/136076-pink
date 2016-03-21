@@ -27,36 +27,21 @@
   @media @desktop-widths {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
   }
 
   outline: 2px solid blue;
 }
 
-.main-nav__menu {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding-top: 70px;
-  background-color: #283645;
-  @media @tablet-widths {
-    padding-top: 110px;
-  }
-  @media @desktop-widths {
-    display: block;
-    position: static;
-    width: 620px;
-    padding-top: 40px;
-    background-color: transparent;
-  }
-
-  outline: 2px solid red;
-}
-
 .main-nav__logo {
-  position: relative;
+  position: absolute;//А может быть, что поставят огромный логотип и он вывалится из темного фона?
   z-index: 1;
+  max-width: 210px;
+  @media @desktop-widths {
+    position: static;
+  }
 }
 
 .main-nav__icon-menu {
@@ -98,12 +83,15 @@
 }
 
 .main-nav__icon-menu--close {
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  right: 18px;
   z-index: 1;
   display: block;
   width: 25px;
   height: 25px;
+  @media @tablet-widths {
+    top: 43px;
+  }
 }
 
 .main-nav__icon-menu--close::before,
@@ -127,6 +115,33 @@
   transform: rotate(-45deg);
 }
 
+.main-nav__menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 70px;
+  background-color: #283645;
+  @media @tablet-widths {
+    padding-top: 110px;
+  }
+  @media @desktop-widths {
+    display: block;
+    position: static;
+    width: 620px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  outline: 2px solid red;
+}
+
+.main-nav__menu--show {
+  display: block;
+}
+
 .main-nav__menu-list {
   margin: 0;
   padding: 0;
@@ -136,6 +151,7 @@
     position: static;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0;
   }
 
@@ -145,11 +161,14 @@
 .main-nav__menu-item {
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000000;
+  @media @desktop-widths {
+    border: none;
+  }
 }
 
 .main-nav__menu-link {
   display: block;
-  height: 64px;
+  height: 62px;
   text-align: center;
   font-size: 18px;
   line-height: 62px;
@@ -158,6 +177,7 @@
   text-transform: uppercase;
   text-decoration: none;
   @media @desktop-widths {
+    height: auto;
     line-height: 24px;
     font-weight: 400;
     text-transform: none;

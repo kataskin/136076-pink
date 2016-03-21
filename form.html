@@ -42,13 +42,13 @@
               <label for="user-name" class="form__item-name form__item-name--user-detail">
                 Имя:
               </label>
-              <input type="text" class="form__item" id="user-name" placeholder="Введите ваше имя">
+              <input type="text" class="form__item form__item--required" id="user-name" placeholder="Введите ваше имя">
             </div>
             <div class="form__section-item form__section-item--user-detail">
               <label for="user-surname" class="form__item-name form__item-name--user-detail">
                 Фамилия:
               </label>
-              <input type="text" class="form__item" id="user-surname" placeholder="Укажите фамилию">
+              <input type="text" class="form__item form__item--required" id="user-surname" placeholder="Укажите фамилию">
             </div>
             <div class="form__section-item form__section-item--user-detail">
               <label for="user-patronymic" class="form__item-name form__item-name--user-detail">
@@ -61,52 +61,56 @@
             <div class="form__item-name form__item-name--achievement">
               Ваши безбашенные достижения в путешествии
             </div>
-            <input type="checkbox" class="form__checkbox" id="selfie-with-shark" name="selfie-with-shark" checked>
-            <label for="selfie-with-shark" class="form__option form__option--checkbox">
-              Сделал селфи с акулой
-            </label>
-            <input type="checkbox" class="form__checkbox" id="burned-on-beach" name="burned-on-beach" checked>
-            <label for="burned-on-beach" class="form__option form__option--checkbox form__option--odd">
-              Обгорел на пляже
-            </label>
-            <input type="checkbox" class="form__checkbox" id="seen-Chuck-Norris" name="seen-Chuck-Norris">
-            <label for="seen-Chuck-Norris" class="form__option form__option--checkbox">
-              Видел Чака Норриса
-            </label>
-            <input type="checkbox" class="form__checkbox" id="bought-souvenirs" name="bought-souvenirs">
-            <label for="bought-souvenirs" class="form__option form__option--checkbox  form__option--odd">
-              Накупил сувениров
-            </label>
-            <input type="checkbox" class="form__checkbox" id="pinned-tower" name="pinned-tower" checked>
-            <label for="pinned-tower" class="form__option form__option--checkbox">
-              Удержал башню
-            </label>
-            <input type="checkbox" class="form__checkbox" id="destroyed-hotel" name="destroyed-hotel">
-            <label for="destroyed-hotel" class="form__option form__option--checkbox form__option--odd">
-              Разгромил отель
-            </label>
+            <div class="form__section-item form__section-item--achievement">
+              <input type="checkbox" class="form__checkbox" id="selfie-with-shark" name="selfie-with-shark" checked>
+              <label for="selfie-with-shark" class="form__option form__option--checkbox">
+                Сделал селфи с акулой
+              </label>
+              <input type="checkbox" class="form__checkbox" id="burned-on-beach" name="burned-on-beach" checked>
+              <label for="burned-on-beach" class="form__option form__option--checkbox form__option--odd">
+                Обгорел на пляже
+              </label>
+              <input type="checkbox" class="form__checkbox" id="seen-Chuck-Norris" name="seen-Chuck-Norris">
+              <label for="seen-Chuck-Norris" class="form__option form__option--checkbox">
+                Видел Чака Норриса
+              </label>
+              <input type="checkbox" class="form__checkbox" id="bought-souvenirs" name="bought-souvenirs">
+              <label for="bought-souvenirs" class="form__option form__option--checkbox  form__option--odd">
+                Накупил сувениров
+              </label>
+              <input type="checkbox" class="form__checkbox" id="pinned-tower" name="pinned-tower" checked>
+              <label for="pinned-tower" class="form__option form__option--checkbox">
+                Удержал башню
+              </label>
+              <input type="checkbox" class="form__checkbox" id="destroyed-hotel" name="destroyed-hotel">
+              <label for="destroyed-hotel" class="form__option form__option--checkbox form__option--odd">
+                Разгромил отель
+              </label>
+            </div>
           </div>
           <div class="form__section form__section--user-contact">
             <div class="form__item-name form__item-name--contact">
               Контактная информация
             </div>
-            <div class="form__section-item form__section-item--user-contact">
-              <label for="user-phone" class="form__item-name form__item-name--mobile-only">
-                Номерок телефончика
-              </label>
-              <input type="tel" class="form__item" id="user-phone" name="user-phone" placeholder="Номер, пожалуйста">
-              <label for="user-phone" class="form__item-name form__item-name--mobile-none">
-                Номер телефона
-              </label>
-            </div>
-            <div class="form__section-item form__section-item--user-contact">
-              <label for="user-email" class="form__item-name form__item-name--mobile-only">
-                Адресок почты
-              </label>
-              <input type="email" class="form__item" id="user-email" name="user-email" placeholder="E-mail, пожалуйста">
-              <label for="user-email" class="form__item-name form__item-name--mobile-none">
-                Адрес почты
-              </label>
+            <div class="form__inner-wrapper">
+              <div class="form__section-item form__section-item--user-contact">
+                <label for="user-phone" class="form__item-name form__item-name--mobile-only">
+                  Номерок телефончика
+                </label>
+                <input type="tel" class="form__item form__item--required" id="user-phone" name="user-phone" placeholder="Номер, пожалуйста">
+                <label for="user-phone" class="form__item-name form__item-name--mobile-none">
+                  Номер телефона
+                </label>
+              </div>
+              <div class="form__section-item form__section-item--user-contact">
+                <label for="user-email" class="form__item-name form__item-name--mobile-only">
+                  Адресок почты
+                </label>
+                <input type="email" class="form__item form__item--required" id="user-email" name="user-email" placeholder="E-mail, пожалуйста">
+                <label for="user-email" class="form__item-name form__item-name--mobile-none">
+                  Адрес почты
+                </label>
+              </div>
             </div>
           </div>
           <div class="form__section form__section--user-app">
@@ -133,7 +137,7 @@
             <textarea class="form__item form__item--textarea" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </div>
           <div class="form__submit">
-            <button type="submit" class="form-btn">Отправить форму</button>
+            <button type="submit" class="form-btn from-btn--submit">Отправить форму</button>
             <p class="form__required"><span>*</span> &mdash; обязательные </p>
           </div>
         </form>
@@ -151,28 +155,39 @@
         </div>
         <div class="page-footer__section">
           <span class="page-footer__designed">Разработано</span>
-          <img src="http://placehold.it/50x50" class="page-footer__logo-htmlacademy" alt="htmlacademy" width="50" height="50">
+          <a href="https://htmlacademy.ru/">
+            <img src="http://placehold.it/50x50" class="page-footer__logo-htmlacademy" alt="htmlacademy" width="50" height="50">
+          </a>
         </div>
       </div>
     </footer>
-    <div class="popup popup--big">
-      <h3 class="popup__title">Ваша заявка отправлена</h3>
-      <p class="popup__text">
-        Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы
-        рассмотрим ее и опопвестим вас.
-      </p>
-      <div class="popup__btn-area popup__btn-area--bg-color">
-        <button class="form-btn" type="button">Закрыть окно</button>
+    <div class="popup popup--wrapper-true">
+      <div class="popup-item popup-item--true">
+        <div class="popup__inner-wrapper">
+          <h3 class="popup__title">Ваша заявка отправлена</h3>
+          <p class="popup__text">
+            Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы
+            рассмотрим ее и оповестим вас.
+          </p>
+        </div>
+        <div class="popup__btn-area popup__btn-area--close">
+          <button class="form-btn form-btn--close" type="button">Закрыть окно</button>
+        </div>
       </div>
     </div>
-    <div class="popup">
-      <h3 class="popup__title">Что-то пошло не так!</h3>
-      <p class="popup__text">
-        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-      </p>
-      <div class="popup__btn-area">
-        <button class="form-btn" type="button">Ок</button>
+    <div class="popup popup--wrapper-false">
+      <div class="popup-item popup-item--false">
+        <div class="popup__inner-wrapper">
+          <h3 class="popup__title">Что-то пошло не так!</h3>
+          <p class="popup__text">
+            Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+          </p>
+        </div>
+        <div class="popup__btn-area">
+          <button class="form-btn form-btn--ok" type="button">Ок</button>
+        </div>
       </div>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
