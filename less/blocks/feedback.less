@@ -40,6 +40,16 @@
   transform: rotate(-45deg);
 }
 
+.feedback__switch:hover {
+  border-right: 2px solid rgba(53, 67, 81, 0.6);
+  border-bottom: 2px solid rgba(53, 67, 81, 0.6);
+}
+
+.feedback__switch:active {
+  border-right: 2px solid rgba(53, 67, 81, 0.1);
+  border-bottom: 2px solid rgba(53, 67, 81, 0.1);
+}
+
 .feedback__slide-radio1,
 .feedback__slide-radio2,
 .feedback__slide-radio3 {
@@ -57,6 +67,7 @@
 .feedback__slide-radio3:checked ~ .feedback__switch-points .feedback__switch-point--3 {
   background-color: #ffffff;
   box-shadow: 0 0 0 3px #283645;
+  cursor: default;
 }
 
 .feedback__switch-points {
@@ -82,9 +93,15 @@
   width: 6px;
   border-radius: 50%;
   background-color: #bec2c7;
-  &:hover {
-    cursor: pointer;
-  }
+}
+
+.feedback__switch-point:hover {
+  cursor: pointer;
+  background-color: #7e868f;
+}
+
+.feedback__switch-point:active {
+  background-color: #e9ebec;
 }
 
 .feedback__list {

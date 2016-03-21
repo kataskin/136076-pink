@@ -52,11 +52,21 @@
   }
 }
 
+.fares__switch-point:hover {
+  cursor: pointer;
+  background-color: #7e868f;
+}
+
+.fares__switch-point:active {
+  background-color: #e9ebec;
+}
+
 .fares__slide-radio1:checked ~ .fares__switch-points .fares__switch-point--1,
 .fares__slide-radio2:checked ~ .fares__switch-points .fares__switch-point--2,
 .fares__slide-radio3:checked ~ .fares__switch-points .fares__switch-point--3 {
   background-color: #ffffff;
   box-shadow: 0 0 0 3px #283645;
+  cursor: default;
 }
 
 .fares__slide-radio1:checked ~ .fares__list {
