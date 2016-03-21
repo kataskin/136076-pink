@@ -42,13 +42,13 @@
               <label for="user-name" class="form__item-name form__item-name--user-detail">
                 Имя:
               </label>
-              <input type="text" class="form__item form__item--required" id="user-name" placeholder="Введите ваше имя">
+              <input type="text" class="form__item" id="user-name" placeholder="Введите ваше имя" required>
             </div>
             <div class="form__section-item form__section-item--user-detail">
               <label for="user-surname" class="form__item-name form__item-name--user-detail">
                 Фамилия:
               </label>
-              <input type="text" class="form__item form__item--required" id="user-surname" placeholder="Укажите фамилию">
+              <input type="text" class="form__item" id="user-surname" placeholder="Укажите фамилию" required>
             </div>
             <div class="form__section-item form__section-item--user-detail">
               <label for="user-patronymic" class="form__item-name form__item-name--user-detail">
@@ -58,7 +58,7 @@
             </div>
           </div>
           <div class="form__section form__section--user-achievement">
-            <div class="form__item-name form__item-name--achievement">
+            <div class="form__item-name form__item-name--title form__item-name--achievement">
               Ваши безбашенные достижения в путешествии
             </div>
             <div class="form__section-item form__section-item--achievement">
@@ -89,7 +89,7 @@
             </div>
           </div>
           <div class="form__section form__section--user-contact">
-            <div class="form__item-name form__item-name--contact">
+            <div class="form__item-name form__item-name--title form__item-name--contact">
               Контактная информация
             </div>
             <div class="form__inner-wrapper">
@@ -97,7 +97,7 @@
                 <label for="user-phone" class="form__item-name form__item-name--mobile-only">
                   Номерок телефончика
                 </label>
-                <input type="tel" class="form__item form__item--required" id="user-phone" name="user-phone" placeholder="Номер, пожалуйста">
+                <input type="tel" class="form__item" id="user-phone" name="user-phone" placeholder="Номер, пожалуйста" required>
                 <label for="user-phone" class="form__item-name form__item-name--mobile-none">
                   Номер телефона
                 </label>
@@ -106,7 +106,7 @@
                 <label for="user-email" class="form__item-name form__item-name--mobile-only">
                   Адресок почты
                 </label>
-                <input type="email" class="form__item form__item--required" id="user-email" name="user-email" placeholder="E-mail, пожалуйста">
+                <input type="email" class="form__item" id="user-email" name="user-email" placeholder="E-mail, пожалуйста" required>
                 <label for="user-email" class="form__item-name form__item-name--mobile-none">
                   Адрес почты
                 </label>
@@ -114,7 +114,7 @@
             </div>
           </div>
           <div class="form__section form__section--user-app">
-            <div class="form__item-name form__item-name--app">
+            <div class="form__item-name form__item-name--title form__item-name--app">
               С каким приложением путешествовали?
             </div>
             <input type="radio" class="form__radio" id="iOS" name="mobile-app" checked>
@@ -131,7 +131,7 @@
             </label>
           </div>
           <div class="form__section form__section--user-emotions">
-            <label for="emotions" class="form__item-name form__item-name--textarea">
+            <label for="emotions" class="form__item-name form__item-name--title form__item-name--textarea">
               Опишите свои эмоции
             </label>
             <textarea class="form__item form__item--textarea" id="emotions" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>

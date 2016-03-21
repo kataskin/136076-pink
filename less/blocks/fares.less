@@ -32,11 +32,10 @@
 .fares__switch-points {
   position: absolute;
   bottom: 53px;
-  left: 50%;
+  left: 0;
   display: flex;
-  justify-content: space-between;
-  width: 56px;
-  margin-left: -28px;
+  width: 100%;
+  justify-content: center;
   @media @tablet-widths {
     display: none;
   }
@@ -45,8 +44,10 @@
 .fares__switch-point {
   height: 6px;
   width: 6px;
+  margin: 0 6px;
   border-radius: 50%;
   background-color: #bec2c7;
+  border: 3px solid #ffffff
   &:hover {
     cursor: pointer;
   }
@@ -65,7 +66,7 @@
 .fares__slide-radio2:checked ~ .fares__switch-points .fares__switch-point--2,
 .fares__slide-radio3:checked ~ .fares__switch-points .fares__switch-point--3 {
   background-color: #ffffff;
-  box-shadow: 0 0 0 3px #283645;
+  border: 3px solid #283645;
   cursor: default;
 }
 

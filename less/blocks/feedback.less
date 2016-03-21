@@ -66,20 +66,19 @@
 .feedback__slide-radio2:checked ~ .feedback__switch-points .feedback__switch-point--2,
 .feedback__slide-radio3:checked ~ .feedback__switch-points .feedback__switch-point--3 {
   background-color: #ffffff;
-  box-shadow: 0 0 0 3px #283645;
+  border: 3px solid #283645;
   cursor: default;
 }
 
 .feedback__switch-points {
   position: absolute;
-  bottom: 46px;
-  left: 50%;
+  bottom: 44px;
+  left: 0;
   display: flex;
-  justify-content: space-between;
-  width: 56px;
-  margin-left: -28px;
+  width: 100%;
+  justify-content: center;
   @media @tablet-widths {
-    bottom: -44px;
+    bottom: -43px;
     width: 58px;
     margin-left: -29px;
   }
@@ -91,8 +90,10 @@
 .feedback__switch-point {
   height: 6px;
   width: 6px;
+  margin: 0 6px;
   border-radius: 50%;
   background-color: #bec2c7;
+  border: 3px solid #ffffff;
 }
 
 .feedback__switch-point:hover {

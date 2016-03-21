@@ -2,7 +2,7 @@ var link = document.querySelector(".main-nav__icon-menu");
 var menu = document.querySelector(".main-nav__menu");
 
 var form = document.querySelector(".form__main-field");
-var required = document.querySelectorAll(".form__item--required");
+var required = document.querySelectorAll("[required]");
 var buttonOk = document.querySelector(".form-btn--ok");
 var buttonClose = document.querySelector(".form-btn--close");
 var popupSuccess = document.querySelector(".popup--wrapper-true");
