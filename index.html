@@ -16,7 +16,7 @@
           <a href="#" class="main-nav__icon-menu">Открыть/Закрыть</a>
           <div class="main-nav__menu">
             <ul class="main-nav__menu-list">
-              <li class="main-nav__menu-item"><a class="main-nav__menu-link">Главная</a></li>
+              <li class="main-nav__menu-item"><a class="main-nav__menu-link main-nav__menu-link--active">Главная</a></li>
               <li class="main-nav__menu-item"><a href="photo.html" class="main-nav__menu-link">Фотографии</a></li>
               <li class="main-nav__menu-item"><a href="form.html" class="main-nav__menu-link">Конкурс</a></li>
               <li class="main-nav__menu-item"><a href="https://htmlacademy.ru/" class="main-nav__menu-link">HTML Academy</a></li>
@@ -27,7 +27,7 @@
       <div class="page-header__wrapper">
         <div class="page-header__slogan page-header__slogan--main-page">Взгляните на жизнь иначе!</div>
         <section class="download">
-          <a href="#" class="btn">Скачать приложение</a>
+          <a href="#" class="btn btn--download">Скачать приложение</a>
           <div class="download__icons">
             <a href="#" class="download__icon download__icon--apple"></a>
             <a href="#" class="download__icon download__icon--android"></a>
@@ -41,36 +41,44 @@
     </header>
     <main>
       <section class="information">
-        <div class="information__wrapper">
+        <div class="information__slogan-wrapper">
           <div class="information__slogan">Устали от серости мегаполиса?</div>
-          <div class="information__slogan">Нам есть, что вам предложить!</div>
-          <ul class="information__characteristics-list">
-            <li class="information__characteristics-item">
-              <h4 class="information__characteristic-name">Поднимает настроение</h4>
-              <p class="information__characteristic-text">
-                Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+          <div class="information__slogan">Нам есть, что вам<br>предложить!</div>
+        </div>
+        <div class="information__bg-color">
+          <div class="information__inner-wrapper">
+            <ul class="information__characteristics-list">
+              <li class="information__characteristics-item">
+                <h4 class="information__characteristic-name">Поднимает настроение</h4>
+                <p class="information__characteristic-text">
+                  Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!
+                </p>
+              </li>
+              <li class="information__characteristics-item">
+                <h4 class="information__characteristic-name">Меняет мир вокруг</h4>
+                <p class="information__characteristic-text">
+                  Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+                </p>
+              </li>
+              <li class="information__characteristics-item">
+                <h4 class="information__characteristic-name">Заводит новых друзей</h4>
+                <p class="information__characteristic-text">
+                  Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="information__effect">
+          <div class="information__effect-wrapper">
+            <div class="information__effect-item">
+              <h3 class="information__effect-slogan">Эффект на 24 часа!</h3>
+              <p class="information__effect-text">
+                Британские ученые провели исследования и доказали, что положительный
+                эффект от использования приложения длится целые сутки!
               </p>
-            </li>
-            <li class="information__characteristics-item">
-              <h4 class="information__characteristic-name">Меняет мир вокруг</h4>
-              <p class="information__characteristic-text">
-                Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
-              </p>
-            </li>
-            <li class="information__characteristics-item">
-              <h4 class="information__characteristic-name">Заводит новых друзей</h4>
-              <p class="information__characteristic-text">
-                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-              </p>
-            </li>
-          </ul>
-          <div class="information__effect">
-            <h3 class="information__effect-slogan">Эффект на 24 часа!</h3>
-            <p class="information__effect-text">
-              Британские ученые провели исследования и доказали, что положительный
-              эффект от использования приложения длится целые сутки!
-            </p>
-            <a href="#" class="information__effect-link">Узнать больше об исследовании</a>
+              <a href="#" class="information__effect-link">Узнать больше об исследовании</a>
+            </div>
           </div>
         </div>
       </section>
@@ -78,41 +86,52 @@
         <div class="feedback__wrapper">
           <a href="" class="feedback__switch feedback__switch--prev"></a>
           <a href="#" class="feedback__switch feedback__switch--next"></a>
+          <input type="radio" class="feedback__slide-radio1" id="feedback1" name="feedback" checked>
+          <input type="radio" class="feedback__slide-radio2" id="feedback2" name="feedback">
+          <input type="radio" class="feedback__slide-radio3" id="feedback3" name="feedback">
+          <div class="feedback__switch-points">
+            <label for="feedback1" class="feedback__switch-point feedback__switch-point--1"></label>
+            <label for="feedback2" class="feedback__switch-point feedback__switch-point--2"></label>
+            <label for="feedback3" class="feedback__switch-point feedback__switch-point--3"></label>
+          </div>
           <ul class="feedback__list">
-            <li class="feedback__item">
+            <li class="feedback__item feedback__item--1">
               <p class="feedback__user-detail">25 лет, водитель трамвая</p>
               <p class="feedback__user-name">Николай Петров</p>
-              <blockquote class="feedback__text">
-                Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-              </blockquote>
+              <blockquote class="feedback__text">Это приложение перевернуло мой
+                мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к
+                выложенной фотографии!</blockquote>
             </li>
-            <li class="feedback__item feedback__item--none">
+            <li class="feedback__item feedback__item--2">
               <p class="feedback__user-detail">25 лет, водитель трамвая</p>
-              <p class="feedback__user-name">Николай Петров</p>
-              <blockquote class="feedback__text">
-                Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-              </blockquote>
+              <p class="feedback__user-name">Сергей Петров</p>
+              <blockquote class="feedback__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>
             </li>
-            <li class="feedback__item feedback__item--none">
+            <li class="feedback__item feedback__item--3">
               <p class="feedback__user-detail">25 лет, водитель трамвая</p>
-              <p class="feedback__user-name">Николай Петров</p>
-              <blockquote class="feedback__text">
-                Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-              </blockquote>
+              <p class="feedback__user-name">Владимир Петров</p>
+              <blockquote class="feedback__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</blockquote>
             </li>
           </ul>
-          <!-- Здесь будет переключатель -->
         </div>
       </section>
       <section class="fares">
         <div class="fares__wrapper">
+          <input type="radio" class="fares__slide-radio1" id="fare1" name="fares">
+          <input type="radio" class="fares__slide-radio2" id="fare2" name="fares" checked>
+          <input type="radio" class="fares__slide-radio3" id="fare3" name="fares">
+          <div class="fares__switch-points">
+            <label for="fare1" class="fares__switch-point fares__switch-point--1"></label>
+            <label for="fare2" class="fares__switch-point fares__switch-point--2"></label>
+            <label for="fare3" class="fares__switch-point fares__switch-point--3"></label>
+          </div>
           <table class="fares__list">
             <thead>
               <tr>
-                <th class="fares__item-name">
+                <th class="fares__item-name fares__item-name--none">
                 </th>
                 <th class="fares__item-name">
                   <b class="fares__price-name">База</b>
@@ -149,7 +168,6 @@
               </tr>
             </tbody>
           </table>
-          <!-- Здесь будет переключатель -->
         </div>
       </section>
     </main>
@@ -157,37 +175,42 @@
       <div class="contacts__wrapper">
         <div class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</div>
         <div class="contacts__detail">
-          <div class="contacts__item">
+          <div class="contacts__item contacts__item--phone">
             <b class="contacts__item-name">Звоните:</b>
-            <a href="tel:+7(812)555-66-66" class="contacts__item-detail">+7(812)555-66-66</a>
+            <a href="tel:+7(812)555-66-66" class="contacts__item-detail">+7 (812) 555-66-66</a>
           </div>
-          <div class="contacts__item contacts__item--order">
+          <div class="contacts__item contacts__item--email">
             <b class="contacts__item-name">Пишите:</b>
             <a href="mailto:mail@htmlacademy.ru" class="contacts__item-detail">mail@htmlacademy.ru</a>
           </div>
           <div class="contacts__item">
             <b class="contacts__item-name">Приезжайте в гости:</b>
-            <span class="contacts__item-detail">ул. Большая Конюшенная, 19/8</span>
+            <span class="contacts__item-detail contacts__item-detail--adress">ул. Большая Конюшенная, 19/8</span>
           </div>
         </div>
       </div>
-      <div class="contacts__map"></div>
+      <div class="contacts__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124036!2d30.32089461618557!3d59.93879686904783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1458569033480" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
     </section>
     <footer class="page-footer page-footer--mobile-none">
       <div class="page-footer__wrapper">
         <div class="page-footer__section">
           <img src="http://placehold.it/50x50" class="page-footer__pink" alt="PINK" width="50" height="50">
         </div>
-        <div class="page-footer__section">
+        <div class="page-footer__section page-footer__section--social">
           <a href="#" class="page-footer__social page-footer__social--twitter">twitter</a>
           <a href="#" class="page-footer__social page-footer__social--facebook">facebook</a>
           <a href="#" class="page-footer__social page-footer__social--youtube">youtube</a>
         </div>
         <div class="page-footer__section">
           <span class="page-footer__designed">Разработано</span>
-          <img src="http://placehold.it/50x50" class="page-footer__logo-htmlacademy" alt="htmlacademy" width="50" height="50">
+          <a href="https://htmlacademy.ru/">
+            <img src="http://placehold.it/50x50" class="page-footer__logo-htmlacademy" alt="htmlacademy" width="50" height="50">
+          </a>
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,16 +1,53 @@
 .user-post {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
   @media @tablet-widths {
     width: 300px;
+    min-height: 454px;
+    margin-bottom: 21px;
+  }
+  @media @desktop-widths {
+    min-height: 553px;
+    margin-bottom: 56px;
   }
 
   outline: 2px solid red;
 }
 
+.user-post__wrapper--panoramic {
+  position: relative;
+}
+
+.user-post__wrapper--panoramic::before {
+  content: "Панорама дня";
+  position: absolute;
+  top: 0;
+  right: @mobile-width-wrapper-padding;
+  display: block;
+  padding: 6px 20px;
+  font-size: 12px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: #d22856;
+  @media @tablet-widths {
+    top: 57px;
+    right: @tablet-width-wrapper-padding;
+  }
+  @media @desktop-widths {
+    top: 55px;
+    right: @desktop-width-wrapper-padding;
+  }
+}
+
 .user-post--panoramic {
   width: 100%;
-  .user-post__user-detail {
-    @media @tablet-widths {
-      max-width: 440px;//чтобы не наползало на блок Нравится; на десктопе можно больше поставить
+  @media @tablet-widths {
+    margin-bottom: 50px;
+    .user-post__user-detail {
+      max-width: 440px;
     }
   }
   .user-post__comment {
@@ -20,23 +57,103 @@
   }
 }
 
+//Потом убрать!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+.user-post--panoramic .user-post__img {
+  @media @tablet-widths {
+    height: 509px;
+  }
+  @media @desktop-widths {
+    height: 506px;
+  }
+}
+
 .user-post__inner-wrapper {
-  display: flex;//критерий Б16
+  flex-grow: 1;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  padding: 18px 5px 19px 18px;
+  background-color: #f2f2f2;
+  @media @tablet-widths {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 10px 20px 27px;
+  }
+
+  outline: 2px solid green;
+}
+
+.user-post__inner-wrapper--panoramic {
+  @media @tablet-widths {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 24px;
+    .user-post__like {
+      margin-top: 0;
+    }
+  }
 }
 
 .user-post__link {
+  display: block;
   width: 100%;
+
+  outline: 2px solid yellow;
 }
 
-.user-post__inner-wrapper {
-  margin: 10px 20px;
+.user-post__img {
+  display: block;
+  width: 100%;
+  //height: auto; ?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   @media @tablet-widths {
-    margin-left: 30px;
+    height: 300px;
   }
+  @media @desktop-widths {
+    height: 400px;
+  }
+}
+
+.user-post__user-name {
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  font-weight: 700;
+}
+
+.user-post__time {
+  font-size: 12px;
+  line-height: 24px;
+  color: #283645;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 .user-post__comment {
   width: 100%;
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  font-weight: 400;
+  @media @tablet-widths {
+    margin-bottom: auto;
+  }
+}
+
+.user-post__like {
+  margin-left: 32px;
+  font-size: 12px;
+  line-height: 24px;
+  color: #d22856;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  @media @tablet-widths {
+    margin: 0 50px 0 0;
+  }
+  @media @desktop-widths {
+    margin: 11px 52px 0 0;
+  }
+
+  outline: 2px solid yellow;
 }

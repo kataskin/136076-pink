@@ -1,18 +1,42 @@
 .download {
   width: @mobile-width-wrapper;
-  margin: 400px 0 auto;
+  margin: 392px auto 0 auto;
+  padding: 28px 0;
   text-align: center;
   @media @tablet-widths {
     width: 300px;
     margin: 0;
   }
+  @media @desktop-widths {
+    padding: 52px 0;
+  }
 
   outline: 2px solid green;
-  min-height: 340px;
 }
 
 .download__icons {
+  min-height: 110px;
+  @media @tablet-widths {
+    min-height: 141px;
+  }
+  @media @desktop-widths {
+    min-height: 178px;
+  }
 
   outline: 2px solid red;
-  min-height: 80px;
+}
+
+.download__text {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 300;
+  @media @tablet-widths {
+    margin-bottom: 83px;
+    font-size: 18px;
+  }
+  @media @desktop-widths {
+    margin-bottom: 72px;
+  }
 }
