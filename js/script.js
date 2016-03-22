@@ -1,12 +1,6 @@
 var link = document.querySelector(".main-nav__icon-menu");
 var menu = document.querySelector(".main-nav__menu");
-
 var form = document.querySelector(".form__main-field");
-var required = document.querySelectorAll("[required]");
-var buttonOk = document.querySelector(".form-btn--ok");
-var buttonClose = document.querySelector(".form-btn--close");
-var popupSuccess = document.querySelector(".popup--wrapper-true");
-var popupFalse = document.querySelector(".popup--wrapper-false")
 
 if (link) {
   link.addEventListener("click", function(event) {
@@ -21,6 +15,11 @@ function hasValue(elem) {
 }
 
 if (form) {
+  var required = form.querySelectorAll("[required]");
+  var popupSuccess = document.querySelector(".popup--wrapper-true");
+  var popupFalse = document.querySelector(".popup--wrapper-false");
+  var buttonOk = popupFalse.querySelector(".form-btn--ok");
+  var buttonClose = popupSuccess.querySelector(".form-btn--close");
   form.addEventListener("submit", function(event) {
     event.preventDefault();
     for (i = 0; i < required.length; i++) {
