@@ -104,13 +104,7 @@
 .user-post__img {
   display: block;
   width: 100%;
-  //height: auto; ?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  @media @tablet-widths {
-    height: 300px;
-  }
-  @media @desktop-widths {
-    height: 400px;
-  }
+  height: auto;
 }
 
 .user-post__user-name {
@@ -141,6 +135,7 @@
 }
 
 .user-post__like {
+  position: relative;
   margin-left: 32px;
   font-size: 12px;
   line-height: 24px;
@@ -156,4 +151,29 @@
   }
 
   outline: 2px solid yellow;
+}
+
+.user-post__like::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -33px;
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  outline: 2px solid green;
+  @media @tablet-widths {
+    left: 227px;
+  }
+}
+
+.user-post__like--panoramic::before {
+  @media @tablet-widths {
+    top: 5px;
+    left: auto;
+    right: -30px;
+  }
 }

@@ -1,8 +1,6 @@
 .main-nav {
-  min-height: 66px;
   background-color: rgba(0, 0, 0, 0.3);
   @media @tablet-widths {
-    min-height: 110px;
     margin-bottom: 94px;
   }
   @media @desktop-widths {
@@ -24,8 +22,17 @@
 
 .main-nav__wrapper {
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 66px;
+  @media @tablet-widths {
+    min-height: 110px;
+  }
   @media @desktop-widths {
     display: flex;
+    min-height: 55px;
     justify-content: space-between;
     align-items: center;
     padding-top: 27px;
@@ -36,18 +43,63 @@
 }
 
 .main-nav__logo {
-  position: absolute;//А может быть, что поставят огромный логотип и он вывалится из темного фона?
+  position: relative;
   z-index: 1;
-  max-width: 210px;
-  @media @desktop-widths {
-    position: static;
+  width: 75px;
+  height: 50px;
+  overflow: hidden;
+  @media @tablet-widths {
+    top: -5px;
+    width: 150px;
   }
 }
 
-.main-nav__icon-menu {
+.main-nav__logo svg {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: center;
+  right: 0;
+  @media @tablet-widths {
+    right: 3px;
+  }
+}
+
+.main-nav__img--tablet {
+  display: none;
+  @media @tablet-widths {
+    display: block;
+  }
+}
+
+.main-nav__img--tablet-only {
+  display: none;
+  @media @tablet-widths {
+    display: block;
+  }
+  @media @desktop-widths {
+    display: none;
+  }
+}
+
+.main-nav__img--desktop {
+  display: none;
+  @media @desktop-widths {
+    display: block;
+  }
+}
+
+.main-nav__logo:not(.main-nav__logo--main-page):hover path {
+  fill: #d22856;
+}
+
+.main-nav__logo:not(.main-nav__logo--main-page):active {
+  opacity: 0.3;
+}
+
+.main-nav__logo:active path:not(.main-nav__img-item--pink) {
+  fill: #ffffff;
+}
+
+.main-nav__icon-menu {
   display: block;
   width: 50px;
   height: 25px;
@@ -65,7 +117,7 @@
 .main-nav__icon-menu::before,
 .main-nav__icon-menu::after {
   content: "";
-  position: absolute;
+  position: relative;
   left: 0;
   display: block;
   width: 100%;
@@ -79,7 +131,7 @@
 }
 
 .main-nav__icon-menu::after {
-  bottom: 0;
+  bottom: 4px;
 }
 
 .main-nav__icon-menu--close {
@@ -100,8 +152,6 @@
 .main-nav__icon-menu--close::before,
 .main-nav__icon-menu--close::after {
   content: "";
-  position: absolute;
-  top: 11px;
   left: -3px;
   z-index: 1;
   width: 30px;
@@ -111,11 +161,13 @@
 
 .main-nav__icon-menu--close::before {
   transform: rotate(45deg);
+  top: 11px;
   box-shadow: none;
 }
 
 .main-nav__icon-menu--close::after {
   transform: rotate(-45deg);
+  top: -13px;
 }
 
 .main-nav__icon-menu:hover::before,

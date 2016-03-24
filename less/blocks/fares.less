@@ -96,7 +96,7 @@
   width: @mobile-width-wrapper * 3;
   margin: 64px 0 100px 0;
   table-layout: fixed;
-  border-radius: 10px;//как сделать скругление углов таблицы?
+  border-radius: 10px;
   @media @tablet-widths {
     width: 100%;
     margin: 36px 0 69px 0;
@@ -123,11 +123,17 @@
   @media @mobile-width-only {
     display: none;
   }
-
 }
 
 .fares__item-name--none {
   background-color: transparent;
+}
+
+.fares__item-name--hit {
+  background-image: url("../img/bg-hit.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 40px 40px;
 }
 
 .fares__price-name {
