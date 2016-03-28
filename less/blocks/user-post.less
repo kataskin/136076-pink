@@ -57,16 +57,6 @@
   }
 }
 
-//Потом убрать!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-.user-post--panoramic .user-post__img {
-  @media @tablet-widths {
-    height: 509px;
-  }
-  @media @desktop-widths {
-    height: 506px;
-  }
-}
-
 .user-post__inner-wrapper {
   flex-grow: 1;
   display: flex;
@@ -104,13 +94,7 @@
 .user-post__img {
   display: block;
   width: 100%;
-  //height: auto; ?!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-  @media @tablet-widths {
-    height: 300px;
-  }
-  @media @desktop-widths {
-    height: 400px;
-  }
+  height: auto;
 }
 
 .user-post__user-name {
@@ -141,7 +125,8 @@
 }
 
 .user-post__like {
-  margin-left: 32px;
+  position: relative;
+  padding-left: 32px;
   font-size: 12px;
   line-height: 24px;
   color: #d22856;
@@ -149,11 +134,47 @@
   text-transform: uppercase;
   text-decoration: none;
   @media @tablet-widths {
-    margin: 0 50px 0 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 50px 0 0;
   }
   @media @desktop-widths {
     margin: 11px 52px 0 0;
   }
 
   outline: 2px solid yellow;
+}
+
+.user-post__like::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 0;
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  outline: 2px solid green;
+  @media @tablet-widths {
+    left: auto;
+    right: 22px;
+  }
+}
+
+.user-post__like--panoramic {
+  @media @tablet-widths {
+    width: auto;
+    margin-right: 52px;
+    padding: 0;
+  }
+}
+
+.user-post__like--panoramic::before {
+  @media @tablet-widths {
+    top: 5px;
+    left: auto;
+    right: -32px;
+  }
 }

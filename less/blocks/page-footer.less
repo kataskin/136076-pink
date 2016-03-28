@@ -1,4 +1,10 @@
 .page-footer {
+  padding: 40px 0;
+  @media @tablet-widths {
+    padding: 0;
+  }
+  @media @desktop-widths {
+  }
 
   outline: 2px solid green;
 }
@@ -14,14 +20,14 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 290px;
+  min-height: 203px;
   @media @tablet-widths {
     flex-direction: row;
     align-items: center;
     min-height: 127px;
   }
   @media @desktop-widths {
-    min-height: 200px;
+    min-height: 190px;
   }
 
 
@@ -31,14 +37,51 @@
 .page-footer__section {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   text-align: center;
 
   outline: 2px solid yellow;
 }
 
+.page-footer__section--logo {
+  position: relative;
+  top: -8px;
+}
+
+.page-footer__logo-item--mobile {
+  @media @desktop-widths {
+    display: none;
+  }
+}
+
+.page-footer__logo-item--desktop {
+  display: none;
+  @media @desktop-widths {
+    display: block;
+  }
+}
+
+.page-footer__logo:hover .page-footer__logo-pink {
+  fill: #d22856;
+}
+
+.page-footer__logo:active .page-footer__logo-pink {
+  fill: #283645;
+}
+
+.page-footer__logo:active {
+  opacity: 0.3;
+}
+
 .page-footer__section--social {
-  width: 177px;
+  width: 180px;
+  @media @tablet-widths {
+    margin-right: 10px;
+  }
+  @media @desktop-widths {
+    margin-right: 0;
+    margin-left: 10px;
+  }
 }
 
 .page-footer__social {
@@ -47,6 +90,22 @@
   font-size: 0;
   border: 3px solid rgba(40, 54, 69, 0.1);
   border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 18px;
+}
+
+.page-footer__social--twitter {
+  background-image: url("../img/icon-twitter.svg");
+}
+
+.page-footer__social--facebook {
+  background-image: url("../img/icon-facebook.svg");
+}
+
+.page-footer__social--youtube {
+  background-image: url("../img/icon-youtube.svg");
+  background-size: 15px 15px;
 }
 
 .page-footer__social:hover {
@@ -55,16 +114,34 @@
 
 .page-footer__social:active {
   border: 3px solid rgba(40, 54, 69, 0.1);
+  opacity: 0.3;
 }
 
 .page-footer__designed {
-  @media @tablet-widths {
-    font-size: 14px;
-    line-height: 18px;
-    color: #283645;
-    font-weight: 400;
-  }
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 18px;
+  color: #283645;
+  font-weight: 400;
+  text-decoration: none;
   @media @desktop-widths {
     font-size: 18px;
   }
+}
+
+.page-footer__designed span {
+  margin-right: 15px;
+}
+
+.page-footer__designed path {
+  fill: #d22856;
+}
+
+.page-footer__designed:hover path {
+  fill: #283645;
+}
+
+.page-footer__designed:active path {
+  fill: #bec2c7;
 }
