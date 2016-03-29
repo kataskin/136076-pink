@@ -60,12 +60,12 @@ gulp.task("html", function() {
     .pipe(gulp.dest("./build"));
 });
 
-gulp.task("clean0", function () {
+gulp.task("clean", function () {
   return gulp.src("./build", {read: false})
     .pipe(clean());
 });
 
-gulp.task('clean', function () {
+gulp.task('clean1', function () {
     return del(['build']);
 });
 
