@@ -10,8 +10,7 @@ var mqpacker = require("css-mqpacker");
 var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
-var clean = require('gulp-clean');
-var del = require('del');
+var clean = require("gulp-clean");
 
 gulp.task("style", function() {
   gulp.src("less/style.less")
@@ -39,7 +38,7 @@ gulp.task("style", function() {
 gulp.task("images", function() {
   return gulp.src("img/**/*.{png,jpg,gif,svg}")
     .pipe(imagemin({
-      optimizationLevel: 1,
+      optimizationLevel: 3,
       progressive: true
     }))
     .pipe(gulp.dest("build/img"));
@@ -65,11 +64,17 @@ gulp.task("clean", function () {
     .pipe(clean());
 });
 
-gulp.task('clean1', function () {
-    return del(['build']);
+gulp.task("build", ["clean"], function() {
+  gulp.start(
+    "fonts",
+    "html",
+    "script",
+    "style",
+    "images"
+  );
 });
 
-gulp.task("build", [
+gulp.task("build0", [
   "clean",
   "fonts",
   "html",
