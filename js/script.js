@@ -3,6 +3,7 @@ var menu = document.querySelector(".main-nav__menu");
 var form = document.querySelector(".form__main-field");
 
 if (link) {
+  menu.classList.remove("main-nav__menu--show");
   link.addEventListener("click", function(event) {
     event.preventDefault();
     menu.classList.toggle("main-nav__menu--show");
