@@ -52,7 +52,7 @@
 
 .main-nav__logo svg {
   position: absolute;
-  top: center;
+  top: 0;
   right: 0;
   @media @tablet-widths {
     right: 3px;
@@ -83,7 +83,8 @@
   }
 }
 
-a.main-nav__logo:hover path {
+a.main-nav__logo:hover path,
+a.main-nav__logo:active .main-nav__img-item--pink{
   fill: #d22856;
 }
 
