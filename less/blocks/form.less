@@ -1,10 +1,11 @@
 .form {
-  padding: 45px 0 0 0;
+  padding: 45px 0 14px 0;
+  @media @tablet-widths {
+    padding: 92px 0 20px 0;
+  }
   @media @tablet-widths {
     padding: 92px 0 0 0;
   }
-
-  outline: 2px solid green;
 }
 
 .form__description {
@@ -26,8 +27,6 @@
     width: 800px;
     margin-bottom: 79px;
   }
-
-  outline: 2px solid red;
 }
 
 .form__main-field {
@@ -48,8 +47,6 @@
   @media @desktop-widths {
     flex-direction: column;
   }
-
-  outline: 2px solid yellow;
 }
 
 .form__section-item {
@@ -66,8 +63,6 @@
   color: #d22856;
   font-weight: 400;
   text-transform: uppercase;
-
-  outline: 2px solid red;
 }
 
 .form__item-name--title {
@@ -138,9 +133,6 @@
     margin-left: 60px;
     padding-left: 58px;
   }
-
-  outline: 2px solid green;
-  min-height: 40px;
 }
 
 .form__section--user-detail {
@@ -182,7 +174,7 @@
     align-items: flex-start;
     width: 100%;
     margin: 0 0 63px 0;
-    padding-bottom: 17px;
+    padding-bottom: 15px;
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
   }
@@ -200,7 +192,7 @@
 }
 
 .form__option--radio {
-  margin-bottom: 35px;
+  margin-bottom: 45px;
   @media @desktop-widths {
     margin-left: 78px;
   }
@@ -299,8 +291,6 @@
     padding: 0;
     margin-bottom: 14px;
   }
-
-  outline: 2px solid blue;
 }
 
 .form__item-name--contact {
@@ -382,32 +372,15 @@
     width: auto;
     padding: 0 0px 0 60px;
   }
-
-  outline: 2px solid blue;
 }
 
 .form__option--checkbox {
+  margin-bottom: 52px;
   @media @desktop-widths {
     width: 200px;
-    margin: 0 0 42px 0px;
+    margin: 0 0 52px 0px;
   }
 }
-
-/*
-.form__option--checkbox:nth-of-type(1),
-.form__option--checkbox:nth-of-type(2) {
-  @media @desktop-widths {
-    width: 213px;
-  }
-}
-
-.form__option--checkbox:nth-of-type(5),
-.form__option--checkbox:nth-of-type(6) {
-  @media @desktop-widths {
-    width: 198px;
-  }
-}
-*/
 
 .form__option--odd {
   @media @desktop-widths {
@@ -477,6 +450,7 @@
   @media @desktop-widths {
     width: 820px;
     padding: 20px 60px 40px 60px;
+    margin-bottom: 68px;
   }
 }
 
@@ -521,6 +495,9 @@
   @media @tablet-widths {
     flex-direction: row;
     justify-content: space-between;
+  }
+  @media @desktop-widths {
+    min-height: 0;
   }
 }
 

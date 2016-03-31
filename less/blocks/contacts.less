@@ -1,8 +1,3 @@
-.contacts {
-
-  outline: 2px solid red;
-}
-
 .contacts__detail {
   display: flex;
   flex-direction: column;
@@ -18,8 +13,6 @@
   @media @desktop-widths {
     justify-content: space-between;
   }
-
-  outline: 2px solid green;
 }
 
 .contacts__slogan {
@@ -56,8 +49,6 @@
     width: 290px;
     margin: 56px 0 0 0;
   }
-
-  outline: 2px solid yellow;
 }
 
 .contacts__item--phone {
@@ -118,14 +109,18 @@ a.contacts__item-detail:active {
   position: relative;
   height: 200px;
   background-color: #c5c2bf;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
   @media @tablet-widths {
     height: 380px;
+    background-image: url("../img/map-tablet.jpg");
+    background-position: center;
   }
   @media @desktop-widths {
     height: 500px;
+    background-image: url("../img/map-desktop.jpg");
   }
-
-  outline: 2px solid yellow;
 }
 
 .contacts__map::before,

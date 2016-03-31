@@ -11,11 +11,7 @@
     @media @desktop-widths {
       height: 82px;
     }
-
-    outline: 2px solid red;
   }
-
-  outline: 2px solid green;
 }
 
 .fares__wrapper {
@@ -31,7 +27,7 @@
 
 .fares__switch-points {
   position: absolute;
-  bottom: 53px;
+  bottom: 48px;
   left: 0;
   display: flex;
   width: 100%;
@@ -107,12 +103,12 @@
 }
 
 .fares__item-name {
-  padding: 17px 0 20px 0;
+  padding: 15px 0 20px 0;
   border-right: 2px solid #e5e5e5;
   background-color: #283645;
   text-align: center;
   @media @tablet-widths {
-    padding: 13px 0 13px 0;
+    padding: 13px 0 11px 0;
   }
   @media @desktop-widths {
     padding: 16px 0 20px 0;
@@ -176,8 +172,8 @@
   &::after {
     content: "ХИТ";
     position: absolute;
-    top: 18px;
-    left: 10px;
+    top: 16px;
+    left: 12px;
     font-size: 14px;
     line-height: 18px;
     color: #ffffff;
@@ -186,7 +182,7 @@
     transform: rotate(-45deg);
     @media @tablet-widths {
       top: 9px;
-      left: 8px;
+      left: 6px;
     }
     @media @desktop-widths {
       top: 19px;
@@ -197,12 +193,14 @@
 
 .fares__price-name {
   display: block;
+  margin-bottom: 2px;
   font-size: 18px;
   line-height: 30px;
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
   @media @tablet-widths {
+    margin-bottom: 0;
     font-size: 16px;
   }
   @media @desktop-widths {
@@ -231,29 +229,27 @@
   @media @mobile-width-only {
       display: none;
   }
-  height: 45px;
   padding: 0 10px 0 15px;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
-  font-weight: 300;
+  font-weight: 400;
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
   @media @desktop-widths {
-    height: 60px;
-    padding: 0 10px 0 23px;
+    padding: 0 10px 0 20px;
     font-size: 18px;
   }
 }
 
 .fares__option {
   position: relative;
-  height: 60px;
+  height: 59px;
   padding: 0 70px 0 24px;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
@@ -262,7 +258,7 @@
     font-size: 0;
   }
   @media @desktop-widths {
-    height: 60px;
+    height: 59px;
   }
 }
 
@@ -282,7 +278,7 @@
   transform: rotate(-45deg);
   @media @tablet-widths {
     left: 50%;
-    margin-left: -13px;
+    margin-left: -16px;
   }
 }
 

@@ -11,8 +11,6 @@
     min-height: 553px;
     margin-bottom: 56px;
   }
-
-  outline: 2px solid red;
 }
 
 .user-post__wrapper--panoramic {
@@ -51,6 +49,9 @@
       max-width: 440px;
     }
   }
+  @media @desktop-widths {
+    margin-bottom: 50px;
+  }
   .user-post__comment {
     @media @tablet-widths {
       order: 1;
@@ -69,8 +70,6 @@
     align-items: flex-start;
     padding: 24px 10px 20px 27px;
   }
-
-  outline: 2px solid green;
 }
 
 .user-post__inner-wrapper--panoramic {
@@ -88,14 +87,21 @@
 .user-post__link {
   display: block;
   width: 100%;
-
-  outline: 2px solid yellow;
 }
 
 .user-post__img {
   display: block;
-  width: 100%;
+  width: 280px;
   height: auto;
+  &--panoramic {
+    width: 100%;
+  }
+  @media @tablet-widths {
+    width: 300px;
+    &--panoramic {
+      width: 100%;
+    }
+  }
 }
 
 .user-post__user-name {
@@ -142,8 +148,6 @@
   @media @desktop-widths {
     margin: 11px 52px 0 0;
   }
-
-  outline: 2px solid yellow;
 }
 
 .user-post__like::before {
@@ -157,7 +161,6 @@
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
   background-size: contain;
-  outline: 2px solid green;
   @media @tablet-widths {
     left: auto;
     right: 22px;
@@ -167,7 +170,7 @@
 .user-post__like--panoramic {
   @media @tablet-widths {
     width: auto;
-    margin-right: 52px;
+    margin-right: 49px;
     padding: 0;
   }
 }
