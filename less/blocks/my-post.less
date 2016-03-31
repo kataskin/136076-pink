@@ -4,13 +4,12 @@
     background-color: #ffffff;
     margin-bottom: 25px;
   }
-
-  outline: 2px solid yellow;
 }
 
-.my-post__wrapper--description {
+.my-post__wrapper-description {
   width: 100%;
-  padding: 0;
+  box-sizing: border-box;
+  padding: 0 20px;
   background-color: #ffffff;
 }
 
@@ -32,8 +31,6 @@
     width: @desktop-width-wrapper;
     padding-bottom: 65px;
   }
-
-  outline: 2px solid green;
 }
 
 .my-post__form {
@@ -54,8 +51,6 @@
     padding: 58px 60px 60px 80px;
     background-color: #f2f2f2;
   }
-
-  outline: 2px solid green;
 }
 
 .my-post__img {
@@ -65,8 +60,6 @@
     width: 300px;
     align-self: flex-start;
   }
-
-  outline: 2px solid red;
 }
 
 .my-post__inner-wrapper {
@@ -80,15 +73,13 @@
   @media @desktop-widths {
     width: 410px;
   }
-
-  outline: 2px solid red;
 }
 
 .my-post__toolbar {
   position: relative;
   display: flex;
   margin: 0;
-  padding: 42px 19px 108px 19px;
+  padding: 42px 19px 110px 19px;
   list-style: none;
   justify-content: center;
   @media @tablet-widths {
@@ -100,8 +91,6 @@
   @media @desktop-widths {
     width: 410px;
   }
-
-  outline: 2px solid yellow;
 }
 
 .my-post__toolbar-item {
@@ -112,8 +101,6 @@
     height: 72px;
     align-items: center;
   }
-
-  outline: 2px solid green;
 }
 
 .my-post__tool {
@@ -132,8 +119,6 @@
     height: 50px;
     background-size: 50px 50px;
   }
-
-  outline: 2px solid yellow;
 }
 
 .my-post__toolbar-item--active {
@@ -222,8 +207,6 @@
     margin-left: 7px;
     padding: 0 30px;
   }
-
-  outline: 2px solid red;
 }
 
 .my-post__toolbar-item--active .my-post__tool-line {
@@ -251,38 +234,6 @@
   background-color: #f2f2f2;
   border: 2px solid #d22856;
 }
-
-/*
-.my-post__toolbar-item--crop .my-post__point {
-  left: 193px;
-  @media @tablet-widths {
-    left: 145px;
-  }
-  @media @desktop-widths {
-    left: 71px;
-  }
-}
-
-.my-post__toolbar-item--color .my-post__point {
-  left: 193px;
-  @media @tablet-widths {
-    left: 25px;
-  }
-  @media @desktop-widths {
-    left: 247px;
-  }
-}
-
-.my-post__toolbar-item--contrast .my-post__point {
-  left: 193px;
-  @media @tablet-widths {
-    left: 97px;
-  }
-  @media @desktop-widths {
-    left: 160px;
-  }
-}
-*/
 
 .my-post__point:hover {
   cursor: pointer;
@@ -322,6 +273,4 @@
     width: 410px;
     min-height: 104px;
   }
-
-  outline: 2px solid yellow;
 }

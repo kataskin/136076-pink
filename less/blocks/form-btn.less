@@ -12,8 +12,6 @@
   @media @tablet-widths {
     width: 300px;
   }
-
-  outline: 2px solid yellow;
 }
 
 .form-btn:hover {
@@ -27,6 +25,20 @@
 
 .form-btn:disabled {
   background-color: #e5e5e5;
+}
+
+.form-btn--in-progress {
+  animation-name: blink;
+  animation-duration: 1s;
+}
+
+@keyframes blink {
+  0%, 100% {
+    color: rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    color: rgba(255, 255, 255, 0.7);
+  }
 }
 
 .form-btn--close {
