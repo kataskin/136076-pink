@@ -32,6 +32,11 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  @media @mobile-width-only {
+    &:not(:last-child) {
+      margin-bottom: 28px;
+    }
+  }
 }
 
 .page-footer__section--logo {
@@ -83,20 +88,21 @@ a.page-footer__section--logo:active {
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 18px 18px;
 }
 
 .page-footer__social--twitter {
   background-image: url("../img/icon-twitter.svg");
+  background-size: 18px 15px;
 }
 
 .page-footer__social--facebook {
   background-image: url("../img/icon-facebook.svg");
+  background-size: 9px 19px;
 }
 
 .page-footer__social--youtube {
   background-image: url("../img/icon-youtube.svg");
-  background-size: 15px 15px;
+  background-size: 15px 14px;
   background-position: center left 17px;
 }
 

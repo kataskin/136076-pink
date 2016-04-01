@@ -49,21 +49,19 @@
   border-bottom: 3px solid rgba(53, 67, 81, 0.1);
 }
 
-.feedback__slide-radio1,
-.feedback__slide-radio2,
-.feedback__slide-radio3 {
+.feedback__slide-radio {
   display: none;
 }
 
-.feedback__slide-radio1:checked ~ .feedback__list .feedback__item--1,
-.feedback__slide-radio2:checked ~ .feedback__list .feedback__item--2,
-.feedback__slide-radio3:checked ~ .feedback__list .feedback__item--3 {
+.feedback__slide-radio--1:checked ~ .feedback__list .feedback__item--1,
+.feedback__slide-radio--2:checked ~ .feedback__list .feedback__item--2,
+.feedback__slide-radio--3:checked ~ .feedback__list .feedback__item--3 {
   display: flex;
 }
 
-.feedback__slide-radio1:checked ~ .feedback__switch-points .feedback__switch-point--1,
-.feedback__slide-radio2:checked ~ .feedback__switch-points .feedback__switch-point--2,
-.feedback__slide-radio3:checked ~ .feedback__switch-points .feedback__switch-point--3 {
+.feedback__slide-radio--1:checked ~ .feedback__switch-points .feedback__switch-point--1,
+.feedback__slide-radio--2:checked ~ .feedback__switch-points .feedback__switch-point--2,
+.feedback__slide-radio--3:checked ~ .feedback__switch-points .feedback__switch-point--3 {
   background-color: #ffffff;
   border: 3px solid #283645;
   cursor: default;
