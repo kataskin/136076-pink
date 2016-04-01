@@ -1,14 +1,18 @@
 var link = document.querySelector(".main-nav__icon-menu");
 var menu = document.querySelector(".main-nav__menu");
+var mainLogo = document.querySelector(".main-nav__logo");
+var hamburger = document.querySelector(".main-nav__icon-menu");
 var form = document.querySelector(".form__main-field");
 
 if (link) {
-  menu.classList.remove("main-nav__menu--show");
+  menu.classList.remove("main-nav__menu--without-js");
+  mainLogo.classList.remove("main-nav__logo--without-js");
+  hamburger.classList.remove("main-nav__icon-menu--without-js");
   link.addEventListener("click", function(event) {
     event.preventDefault();
     menu.classList.toggle("main-nav__menu--show");
     link.classList.toggle("main-nav__icon-menu--close");
-  })
+  });
 }
 
 function hasValue(elem) {
@@ -33,8 +37,8 @@ if (form) {
   });
   buttonOk.addEventListener("click", function(event) {
     popupFalse.classList.remove("popup--show");
-  })
+  });
   buttonClose.addEventListener("click", function(event) {
     popupSuccess.classList.remove("popup--show");
-  })
+  });
 }

@@ -4,6 +4,9 @@
     padding: 92px 0 20px 0;
   }
   @media @tablet-widths {
+    padding: 92px 0 20px 0;
+  }
+  @media @desktop-widths {
     padding: 92px 0 0 0;
   }
 }
@@ -228,8 +231,7 @@
   border: 2px solid #d22856;
 }
 
-.form__radio:checked + .form__option--radio::after,
-.form__radio + .form__option--radio:active::after {
+.form__radio:checked + .form__option--radio::after {
   content: "";
   position: absolute;
   top: 7px;
@@ -368,8 +370,9 @@
 .form__section-item--achievement {
   @media @desktop-widths {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: auto;
+    width: @desktop-width-wrapper - 63px;
     padding: 0 0px 0 60px;
   }
 }
@@ -404,8 +407,7 @@
   }
 }
 
-.form__checkbox:checked + .form__option--checkbox::after,
-.form__checkbox + .form__option--checkbox:active::after {
+.form__checkbox:checked + .form__option--checkbox::after {
   content: "";
   position: absolute;
   top: 7px;

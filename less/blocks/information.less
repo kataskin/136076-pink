@@ -69,8 +69,10 @@
   background-size: 157px auto;
   background-repeat: no-repeat;
   background-position: bottom -40px center;
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background-image: url("../img/iphone-screen-mobile@2x.png");
+  @media @mobile-width-only {
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/iphone-screen-mobile@2x.png");
+    }
   }
   @media @tablet-widths {
     padding: 65px 0 19px 310px;
@@ -89,6 +91,9 @@
     padding: 0;
     text-align: center;
     background-image: none;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: none;
+    }
   }
 }
 
@@ -219,7 +224,7 @@
   color: #000000;
   font-weight: 700;
   @media @desktop-widths {
-    width: 510px;
+    width: auto;
   }
 }
 
