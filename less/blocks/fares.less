@@ -253,6 +253,7 @@
   background-color: #ffffff;
   @media @tablet-widths {
     height: 45px;
+    padding: 0;
     font-size: 0;
   }
   @media @desktop-widths {
@@ -260,8 +261,15 @@
   }
 }
 
+.fares__option-name {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
-.fares__option--include::after {
+
+.fares__option-name--include::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -280,7 +288,7 @@
   }
 }
 
-.fares__option--exclude::after {
+.fares__option-name--exclude::after {
   content: "";
   position: absolute;
   top: 50%;
