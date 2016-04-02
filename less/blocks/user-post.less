@@ -67,9 +67,12 @@
   @media @tablet-widths {
     flex-direction: column;
     align-items: flex-start;
-    min-height: 155px;
+    min-height: 154px;
     box-sizing: border-box;
     padding: 24px 10px 20px 27px;
+  }
+  @media @desktop-widths {
+    min-height: 153px;
   }
 }
 
@@ -78,10 +81,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    min-height: 121px;
     padding-bottom: 24px;
     .user-post__like {
       margin-top: 0;
     }
+  }
+  @media @desktop-widths {
+    min-height: 96px;
   }
 }
 
