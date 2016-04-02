@@ -445,6 +445,21 @@
   display: none;
 }
 
+.form__checkbox:disabled + .form__option,
+.form__radio:disabled + .form__option,
+.form__checkbox:disabled + .form__option:hover,
+.form__radio:disabled + .form__option:hover,
+.form__checkbox:disabled + .form__option:active,
+.form__radio:disabled + .form__option:active,
+.form__checkbox:disabled + .form__option:hover::before,
+.form__radio:disabled + .form__option:hover::before,
+.form__checkbox:disabled + .form__option:active::before,
+.form__radio:disabled + .form__option:active::before {
+  color: #e5e5e5;
+  border-color: #e5e5e5;
+  cursor: default;
+}
+
 .form__section--user-emotions {
   padding: 59px 0 32px 0;
   @media @tablet-widths {
