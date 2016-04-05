@@ -43,7 +43,7 @@
 }
 
 .my-post__my-photo {
-  padding: 20px 0 42px 0;
+  padding: 20px 0 38px 0;
   @media @tablet-widths {
     padding: 61px 0 52px 0;
   }
@@ -260,9 +260,6 @@
 }
 
 .my-post__buttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   width: 100%;
   min-height: 122px;
   @media @tablet-widths {
@@ -270,7 +267,8 @@
     min-height: 137px;
   }
   @media @desktop-widths {
-    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
     align-items: flex-end;
     width: 410px;
     min-height: 104px;

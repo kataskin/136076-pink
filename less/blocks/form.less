@@ -232,7 +232,8 @@
   border: 2px solid #d22856;
 }
 
-.form__radio:checked + .form__option--radio::after {
+.form__radio:checked + .form__option--radio::after,
+.form__radio + .form__option--radio:active::after {
   content: "";
   position: absolute;
   top: 7px;
@@ -411,7 +412,8 @@
   }
 }
 
-.form__checkbox:checked + .form__option--checkbox::after {
+.form__checkbox:checked + .form__option--checkbox::after,
+.form__checkbox + .form__option--checkbox:active::after {
   content: "";
   position: absolute;
   top: 7px;
