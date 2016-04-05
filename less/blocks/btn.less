@@ -39,9 +39,16 @@
 }
 
 .btn--submit {
+  margin-bottom: 12px;
   color: #d22856;
   border-color: #d22856;
   background-color: #f2f2f2;
+  @media @tablet-widths {
+    margin-bottom: 24px;
+  }
+  @media @desktop-widths {
+    margin-bottom: 0;
+  }
 }
 
 .btn--submit:hover {
